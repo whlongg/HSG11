@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <bits/stdc++.h>
 using namespace std;
 int result = 0;
@@ -25,4 +26,33 @@ int main()
     cout << result << endl;
 
     return 0;
+=======
+#include <bits/stdc++.h>
+using namespace std;
+int result = 0;
+
+void backtrack(int i, int sum, int count, int n, int s, int a[])
+{
+    if (i == n)
+    {
+        if (sum == s && count > 0)
+            result++;
+        return;
+    }
+    backtrack(i + 1, sum + a[i], count + 1, n, s, a);
+    backtrack(i + 1, sum, count, n, s, a);
+}
+
+int main()
+{
+    int n, s;
+    cin >> n >> s;
+    int a[n];
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+    backtrack(0, 0, 0, n, s, a);
+    cout << result << endl;
+
+    return 0;
+>>>>>>> 5c268531b0287f0d2fe68db2110832e6f8451896
 }
