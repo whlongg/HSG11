@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -105,3 +106,5 @@ int main()
     return 0;
 }
 >>>>>>> 5c268531b0287f0d2fe68db2110832e6f8451896
+=======
+>>>>>>> 7fa4804 (Add new competitive programming solutions for various problems)
