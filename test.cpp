@@ -1,11 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-int main()
-{
-    int a[7] = {1, 2, 3, 4, 5, 6, 7};
-    set<int> st(a, a + 7);
-    auto it = st.find(4);
-    advance(it, -2);
-    cout << *it;
+int main(){
+    int n,x; cin >> n; vector <int> a;
+    for(int i = 1; i <= n; ++i) cin >> x, a.push_back(x);
+    for(int i : a)  cout << ((i&1)?"so le\n":"so chan\n"), cout << '\n';
 }
