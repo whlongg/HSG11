@@ -1,1 +1,0 @@
-R=lambda:[*{*map(int,input().split())}];exec(R()[0]*"R();print('YNEOS'[len(R()+R())<4::2]);")
