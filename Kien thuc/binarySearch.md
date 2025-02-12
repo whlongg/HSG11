@@ -1,5 +1,5 @@
 # 🔎 Kỹ Thuật Tìm Kiếm Nhị Phân (Binary Search) 🚀
-
+_Cre: Nguyen Hoang Long_
 ## 1. 👋 Giới Thiệu
 
 Tìm kiếm nhị phân (Binary Search) là một thuật toán tìm kiếm **hiệu quả** 💪 được sử dụng để **tìm kiếm một giá trị mục tiêu** 🎯 trong một tập hợp dữ liệu **đã được sắp xếp** 📚. Thay vì tìm kiếm tuần tự, tìm kiếm nhị phân **liên tục chia đôi không gian tìm kiếm** ✂️, giúp giảm đáng kể thời gian tìm kiếm ⏱️.
