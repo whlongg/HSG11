@@ -12,9 +12,21 @@ Tìm kiếm nhị phân (Binary Search) là một thuật toán tìm kiếm **hi
 4. **⬇️ Nếu phần tử giữa nhỏ hơn giá trị mục tiêu:** **Thu hẹp** không gian tìm kiếm xuống **nửa bên phải**. ➡️
 5. **🔄 Lặp lại các bước 1-4** cho đến khi tìm thấy giá trị mục tiêu hoặc không gian tìm kiếm trở nên rỗng.
 
-**✨ Ưu điểm chính:**
+**📝 Trong bài này mình sẽ sử dụng bài toán cây thứ k để minh họa:**
 
-* **⏱️ Hiệu quả về thời gian:** Độ phức tạp thời gian của tìm kiếm nhị phân là **O(log N)**, với N là kích thước không gian tìm kiếm. Điều này **nhanh hơn rất nhiều** so với tìm kiếm tuyến tính (O(N)) đối với dữ liệu lớn. 💨
+- Bạn hãy tưởng tượng bạn có một khu vườn với những hàng cây trồng thẳng tắp. Mỗi cây có một vị trí xác định trên đường thẳng đó. Bạn muốn lắp đặt một chiếc máy tưới cây tự động.
+
+- Với mỗi lần bạn muốn dùng máy tưới, bạn sẽ:
+
+- 1.  **Đặt máy tưới tại một vị trí** nào đó trên đường thẳng.
+- 2.  **Chọn số lượng cây (k)** mà bạn muốn máy tưới sẽ tưới.
+
+- Máy tưới này hoạt động rất đặc biệt: nó sẽ **tưới lần lượt cho những cây gần nó nhất**. Đầu tiên, nó tưới cây gần nó nhất, sau đó tưới cây gần thứ nhì, rồi cây gần thứ ba, và cứ thế, cho đến khi tưới đủ **k cây**.
+
+- Điều bạn cần tính là **"công suất" của máy tưới**. Công suất này được đo bằng **khoảng cách từ vị trí đặt máy tưới đến cây xa nhất** trong số **k cây** mà máy tưới đã tưới.
+
+- **Nhiệm vụ của bạn:** Với mỗi phương án đặt máy tưới (vị trí máy và số lượng cây k), hãy **tính toán và cho biết công suất cần dùng** của máy tưới đó.
+- Note: Bài toán này mình tham khảo của anh YugiHacker.
 
 ## 2. 🤔 Khi nào sử dụng Tìm kiếm nhị phân? 📌
 
@@ -34,7 +46,7 @@ Tìm kiếm nhị phân có **rất nhiều ứng dụng** 🌍 trong lập trì
 
 * **3.1. 🔍 Tìm kiếm giá trị trong mảng đã sắp xếp (Ví dụ cơ bản):**
 
-    Đây là ứng dụng **cơ bản nhất** 🦴 của tìm kiếm nhị phân. Tìm kiếm một phần tử cụ thể trong một mảng đã được sắp xếp.  Các ngôn ngữ lập trình thường cung cấp các hàm thư viện hỗ trợ tìm kiếm nhị phân (ví dụ: `binary_search`, `lower_bound`, `upper_bound` trong C++, `Arrays.binarySearch` trong Java, `bisect` trong Python).
+    Đây là ứng dụng **cơ bản nhất** 🦴 của tìm kiếm nhị phân. Tìm kiếm một phần tử cụ thể trong một mảng đã được sắp xếp.  Các ngôn ngữ lập trình thường cung cấp các hàm thư viện hỗ trợ tìm kiếm nhị phân (ví dụ: `binary_search`, `lower_bound`, `upper_bound` trong C++, `bisect` trong Python).
 
     **💻 Ví dụ:** Kiểm tra xem số `x` có tồn tại trong mảng `a` đã sắp xếp hay không.
 
