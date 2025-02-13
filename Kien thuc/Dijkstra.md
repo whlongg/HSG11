@@ -366,5 +366,6 @@ Thuật toán Dijkstra là một công cụ **vô cùng mạnh mẽ** 💪 và *
 
   * [Dijkstra's Algorithm - GeeksforGeeks](https://www.google.com/url?sa=E&source=gmail&q=https://www.geeksforgeeks.org/dijkstra-algorithm/)
   * [Dijkstra's Algorithm - Wikipedia](https://www.google.com/url?sa=E&source=gmail&q=https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
+  * [Dijkstra's visualization - Visualgo](https://visualgo.net/en/sssp?slide=1)
 
 🚀 **Happy Coding\!** 🎯
