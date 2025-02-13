@@ -44,10 +44,6 @@ Một hàm số `f(x)` được gọi là đơn đỉnh trên khoảng `[L, R]` 
 *   **⬆️ Lồi lên (Convex) - Tìm giá trị nhỏ nhất:** Hàm số **giảm dần** trên đoạn `[L, M]` và **tăng dần** trên đoạn `[M, R]`, với `M` là điểm cực tiểu duy nhất (hoặc một đoạn các điểm cực tiểu). ![Image of Convex Unimodal Function](convex.png)
 *   **⬇️ Lõm xuống (Concave) - Tìm giá trị lớn nhất:** Hàm số **tăng dần** trên đoạn `[L, M]` và **giảm dần** trên đoạn `[M, R]`, với `M` là điểm cực đại duy nhất (hoặc một đoạn các điểm cực đại). ![Image of Concave Unimodal Function](concave.png)
 
-**Minh họa tính đơn đỉnh:**
-
-![Image of Unimodal Function Examples and Non-examples](imageFunc.png)
-
 **Ví dụ về hàm đơn đỉnh:**
 
 *   Hàm bậc hai có dạng lồi hoặc lõm (ví dụ: `f(x) = x^2`, `f(x) = -x^2 + 2x + 3`).
