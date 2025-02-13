@@ -1,5 +1,5 @@
 # ➗ Kỹ Thuật Tam Phân Tìm Kiếm (Ternary Search) 🚀
-
+_cre: Astrelix_
 ## 1. 👋 Giới thiệu về Tam phân tìm kiếm
 
 Tam phân tìm kiếm (Ternary Search) là một thuật toán tìm kiếm **hiệu quả** 💪 được sử dụng để tìm **giá trị lớn nhất (hoặc nhỏ nhất)** của một hàm số **đơn đỉnh (unimodal)** trên một **khoảng xác định [L, R]** 🎯.  Khác với tìm kiếm nhị phân chia đôi không gian tìm kiếm, tam phân tìm kiếm **chia ba** ✂️ không gian tìm kiếm trong mỗi bước lặp, để nhanh chóng hội tụ về **điểm cực trị** 🌟 của hàm số.
