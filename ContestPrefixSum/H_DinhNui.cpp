@@ -1,110 +1,50 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+//nguyenhoanglong
 #include <bits/stdc++.h>
 using namespace std;
 
-bool ok(vector<int> &v)
-{
-    int n = v.size();
-    if (n == 1)
-        return true;
-    if (n == 2)
-        return v[0] != v[1];
-    int peak = 0, pos = -1;
-    for (int i = 0; i < n; i++)
-        if ((i == 0 || v[i] > v[i - 1]) && (i == n - 1 || v[i] > v[i + 1]))
-        {
-            peak++;
-            pos = i;
-        }
-    if (peak != 1)
-        return false;
-    for (int i = 1; i < pos; i++)
-        if (v[i] <= v[i - 1])
-            return false;
-    for (int i = pos + 1; i < n; i++)
-        if (v[i] >= v[i - 1])
-            return false;
-
-    return true;
-}
-
-void solve()
-{
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
     int n, q;
     cin >> n >> q;
-    vector<int> a(n);
-    for (int &x : a)
-        cin >> x;
-    while (q--)
-    {
-        int l, r;
-        cin >> l >> r;
-        vector<int> tmp(a.begin() + l - 1, a.begin() + r);
-        cout << (ok(tmp) ? "Yes\n" : "No\n");
+    vector<int> a(n + 1);
+    for (int i = 1; i <= n; ++i) cin >> a[i];
+    vector<int> inc(n + 2, 0);
+    inc[1] = 1;
+    for (int i = 2; i <= n; ++i) {
+        if (a[i] >= a[i-1]) inc[i] = inc[i-1];
+        else inc[i] = i;
     }
-}
-
-int main()
-{
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    solve();
-    return 0;
-}
-=======
-#include <bits/stdc++.h>
-using namespace std;
-
-bool ok(vector<int> &v)
-{
-    int n = v.size();
-    if (n == 1)
-        return true;
-    if (n == 2)
-        return v[0] != v[1];
-    int peak = 0, pos = -1;
-    for (int i = 0; i < n; i++)
-        if ((i == 0 || v[i] > v[i - 1]) && (i == n - 1 || v[i] > v[i + 1]))
-        {
-            peak++;
-            pos = i;
+    vector<int> dec(n + 2, n + 1);
+    dec[n] = n;
+    for (int i = n - 1; i >= 1; --i) {
+        if (a[i] >= a[i+1]) dec[i] = dec[i+1];
+        else dec[i] = i;
+    }
+    int log_n = log2(n) + 1;
+    vector<vector<int> > st(n + 1, vector<int>(log_n));
+    for (int i = 1; i <= n; ++i)
+        st[i][0] = i;
+    for (int j = 1; (1 << j) <= n; ++j)
+        for (int i = 1; i + (1 << j) - 1 <= n; ++i) {
+            int l = st[i][j-1];
+            int r = st[i + (1 << (j-1))][j-1];
+            st[i][j] = (a[l] >= a[r]) ? l : r;
         }
-    if (peak != 1)
-        return false;
-    for (int i = 1; i < pos; i++)
-        if (v[i] <= v[i - 1])
-            return false;
-    for (int i = pos + 1; i < n; i++)
-        if (v[i] >= v[i - 1])
-            return false;
-
-    return true;
-}
-
-void solve()
-{
-    int n, q;
-    cin >> n >> q;
-    vector<int> a(n);
-    for (int &x : a)
-        cin >> x;
-    while (q--)
-    {
+    while (q--) {
         int l, r;
         cin >> l >> r;
-        vector<int> tmp(a.begin() + l - 1, a.begin() + r);
-        cout << (ok(tmp) ? "Yes\n" : "No\n");
+        if (l == r) {
+            cout << "Yes\n";
+            continue;
+        }
+        int k = log2(r - l + 1);
+        int pos1 = st[l][k];
+        int pos2 = st[r - (1 << k) + 1][k];
+        int max_pos = (a[pos1] >= a[pos2]) ? pos1 : pos2;
+        bool ans = (inc[max_pos] <= l) && (dec[max_pos] >= r);
+        cout << (ans ? "Yes\n" : "No\n");
     }
-}
-
-int main()
-{
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    solve();
     return 0;
 }
->>>>>>> 5c268531b0287f0d2fe68db2110832e6f8451896
-=======
->>>>>>> 7fa4804 (Add new competitive programming solutions for various problems)
+
