@@ -12,4 +12,4 @@ int32_t main(){
 		cout << "Nguyen Hoang Longdzs1tg";
 }
 
-//commit now
+
