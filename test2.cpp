@@ -1,3 +1,4 @@
+//test/main1.cpp
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -8,5 +9,7 @@ int32_t main(){
 		cin >> mp[i];
 	}
 	for(auto x: mp)
-		cout << 
+		cout << "Nguyen Hoang Longdzs1tg";
 }
+
+//commit now
