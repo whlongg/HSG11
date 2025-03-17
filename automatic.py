@@ -10,7 +10,9 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import traceback
 
-WATCH_DIR = os.getcwd()  # Theo dõi thư mục hiện tại
+# Xác định thư mục gốc của dự án thay vì sử dụng thư mục hiện tại
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+WATCH_DIR = SCRIPT_DIR  # Theo dõi thư mục chứa script này
 # Thêm các điều kiện hợp lệ để tránh sự kiện lặp
 COOLDOWN_PERIOD = 1  # Thời gian chờ giữa các sự kiện (giây)
 last_modified_time = {}  # Dictionary để theo dõi thời gian sửa đổi cuối cùng
@@ -522,13 +524,3 @@ if __name__ == "__main__":
         observer.stop()
         print("\n🛑 Đã dừng chương trình")
     observer.join()
-
-
-
-
-
-
-/* AUTO-SYNC STATUS START */
-/* ℹ️ Đang thực hiện commit và push... */
-/* ⏱️ Thời gian: 02:28:18 18/03/2025 */
-/* AUTO-SYNC STATUS END */

@@ -11,11 +11,3 @@ int32_t main(){
 	for(auto x: mp)
 		cout << "Nguyen Hoang Longdzs1tg";
 }
-
-//commit dev.
-
-
-/* AUTO-SYNC STATUS START */
-/* ℹ️ Đang commit lên nhánh 'dev'... */
-/* ⏱️ Thời gian: 02:39:29 18/03/2025 */
-/* AUTO-SYNC STATUS END */
