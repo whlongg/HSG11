@@ -129,7 +129,7 @@ def clean_file(file_path):
             lines = f.readlines()
         
         # Danh sách các lệnh cần xóa
-        commands = ["//sync now", "#sync now", 
+        commands = ["//sync", "#sync", 
                     "//commit now", "#commit now", 
                     "//status", "#status"]
         
@@ -242,8 +242,8 @@ def sync_file(file_path):
             os.remove(temp_file)
         
         # Xóa lệnh khỏi file gốc
-        remove_line(file_path, "//sync now")
-        remove_line(file_path, "#sync now")
+        remove_line(file_path, "//sync")
+        remove_line(file_path, "#sync")
         
         # Thêm thông báo vào file gốc
         message = f"✅ Đã đồng bộ đến {final_dest_path}"
@@ -421,7 +421,7 @@ def process_command(file_path, content):
     """Xử lý các lệnh trong file"""
     try:
         # Tìm kiếm và xử lý các lệnh đồng bộ
-        if "//sync now" in content or "#sync now" in content:
+        if "//sync" in content or "#sync" in content:
             sync_file(file_path)
             return True
             
@@ -498,16 +498,18 @@ class FileEventHandler(FileSystemEventHandler):
                 process_command(file_path, content)
                     
             except Exception as e:
-                print(f"⚠️ Lỗi xử lý file {file_path} với encoding khác: {e}")
+                #print(f"⚠️ Lỗi xử lý file {file_path} với encoding khác: {e}")
+                pass
         except Exception as e:
-            print(f"⚠️ Lỗi xử lý file {file_path}: {e}")
+            # print(f"⚠️ Lỗi xử lý file {file_path}: {e}")
+            pass
 
 if __name__ == "__main__":
     print("🚀 Auto-sync running... (Ctrl+C để dừng)")
     print(f"📂 Đang theo dõi thư mục: {WATCH_DIR}")
     print(f"📝 Log file: {LOG_FILE}")
     print("📋 Lệnh hỗ trợ:")
-    print("   - //sync now: Đồng bộ file đến đích")
+    print("   - //sync: Đồng bộ file đến đích")
     print("   - //commit.: Commit lên nhánh hiện tại")
     print("   - //commit tên_nhánh.: Commit lên nhánh chỉ định")
     print("   - //status: Kiểm tra trạng thái đồng bộ")
@@ -524,3 +526,7 @@ if __name__ == "__main__":
         observer.stop()
         print("\n🛑 Đã dừng chương trình")
     observer.join()
+/* AUTO-SYNC STATUS START */
+/* ℹ️ Đang thực hiện commit... */
+/* ⏱️ Thời gian: 02:45:46 18/03/2025 */
+/* AUTO-SYNC STATUS END */

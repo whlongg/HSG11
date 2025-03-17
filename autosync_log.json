@@ -1,23 +1,23 @@
 [
   {
-    "timestamp": "2025-03-18 02:38:54",
+    "timestamp": "2025-03-18 02:45:18",
     "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
     "operation": "status_update",
     "status": "success",
-    "message": "\u2705 \u0110\u00e3 \u0111\u1ed3ng b\u1ed9 \u0111\u1ebfn /Users/astrelix/Documents/HSG11/test/main1.cpp"
+    "message": "\u2705 \u0110\u00e3 \u0111\u1ed3ng b\u1ed9 \u0111\u1ebfn /Users/astrelix/Documents/HSG11/test/main.cpp"
   },
   {
-    "timestamp": "2025-03-18 02:38:54",
+    "timestamp": "2025-03-18 02:45:18",
     "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
     "operation": "sync",
     "status": "success",
-    "message": "\u0110\u00e3 \u0111\u1ed3ng b\u1ed9 \u0111\u1ebfn /Users/astrelix/Documents/HSG11/test/main1.cpp"
+    "message": "\u0110\u00e3 \u0111\u1ed3ng b\u1ed9 \u0111\u1ebfn /Users/astrelix/Documents/HSG11/test/main.cpp"
   },
   {
-    "timestamp": "2025-03-18 02:39:29",
-    "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
+    "timestamp": "2025-03-18 02:45:46",
+    "file": "/Users/astrelix/Documents/HSG11/automatic.py",
     "operation": "status_update",
     "status": "info",
-    "message": "\u0110ang commit l\u00ean nh\u00e1nh 'dev'..."
+    "message": "\u0110ang th\u1ef1c hi\u1ec7n commit..."
   }
 ]
