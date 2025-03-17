@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int32_t main(){
+	int n; cin >> n; 
+	map <int, int> mp;
+	for(int i = 1; i <= n; ++i){
+		cin >> mp[i];
+	}
+	for(auto x: mp)
+		cout << 
+}
