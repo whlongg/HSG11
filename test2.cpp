@@ -12,9 +12,3 @@ int32_t main(){
 		cout << "Nguyen Hoang Longdzs1tg";
 }
 
-//commit now
-
-/* AUTO-SYNC STATUS START */
-/* ℹ️ Đang thực hiện commit và push... */
-/* ⏱️ Thời gian: 02:15:29 18/03/2025 */
-/* AUTO-SYNC STATUS END */

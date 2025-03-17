@@ -5,6 +5,7 @@ import git
 import threading
 import datetime
 import json
+import re
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import traceback
@@ -68,7 +69,7 @@ def read_first_comment(file_path):
             with open(file_path, "r", encoding="latin-1") as f:
                 first_line = f.readline().strip()
                 if first_line.startswith("//"):
-                    return first_line[2:].strip()  # Sửa lỗi typo từ trip() sang strip()
+                    return first_line[2:].strip()  # Sửa lỗi từ trip() sang strip()
                 elif first_line.startswith("#"):
                     return first_line[1:].strip()
         except Exception as e:
@@ -115,6 +116,54 @@ def remove_section_markers(file_path):
     except Exception as e:
         print(f"⚠️ Lỗi khi xóa section markers: {e}")
 
+def clean_file(file_path):
+    """Xóa lệnh và thông báo trạng thái khỏi file"""
+    try:
+        # Xóa phần trạng thái
+        remove_section_markers(file_path)
+        
+        # Xóa tất cả các loại lệnh
+        with open(file_path, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        
+        # Danh sách các lệnh cần xóa
+        commands = ["//sync now", "#sync now", 
+                    "//commit now", "#commit now", 
+                    "//status", "#status"]
+        
+        # Thêm các mẫu lệnh commit mới vào danh sách cần xóa
+        commit_patterns = [
+            r"//commit\.", r"#commit\.",
+            r"//commit\s+[a-zA-Z0-9_\-\/]+\.", r"#commit\s+[a-zA-Z0-9_\-\/]+\."
+        ]
+        
+        # Lọc các dòng không chứa lệnh
+        new_lines = []
+        for line in lines:
+            should_keep = True
+            # Kiểm tra các lệnh cụ thể
+            for cmd in commands:
+                if cmd in line:
+                    should_keep = False
+                    break
+            
+            # Kiểm tra các mẫu lệnh commit mới
+            if should_keep:
+                for pattern in commit_patterns:
+                    if re.search(pattern, line):
+                        should_keep = False
+                        break
+            
+            if should_keep:
+                new_lines.append(line)
+        
+        # Ghi lại nội dung file sau khi xóa lệnh
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.writelines(new_lines)
+            
+    except Exception as e:
+        print(f"⚠️ Lỗi khi làm sạch file {file_path}: {e}")
+
 def add_status_message(file_path, message, status_type="info"):
     """Thêm thông báo trạng thái vào file"""
     try:
@@ -157,7 +206,7 @@ def sync_file(file_path):
         message = "⚠️ Không tìm thấy đường dẫn đích trong file"
         add_status_message(file_path, message, "error")
         print(f"{message}: {file_path}")
-        return
+        return False
     
     # Kiểm tra xem đường dẫn đích có phải đường dẫn tuyệt đối không
     if os.path.isabs(dest_path):
@@ -172,21 +221,36 @@ def sync_file(file_path):
         message = "⚠️ File nguồn và đích giống nhau, bỏ qua"
         add_status_message(file_path, message, "error")
         print(f"{message}: {file_path}")
-        return
+        return False
 
     try:
-        os.makedirs(os.path.dirname(final_dest_path), exist_ok=True)  # Tạo folder nếu chưa có
-        shutil.copy2(file_path, final_dest_path)
+        # Đảm bảo thư mục đích tồn tại
+        os.makedirs(os.path.dirname(final_dest_path), exist_ok=True)
         
-        remove_line(file_path, "//sync now")  # Xóa lệnh cho comment //
-        remove_line(file_path, "#sync now")   # Xóa lệnh cho comment #
+        # Tạo bản sao tạm thời của file gốc sau khi làm sạch
+        temp_file = file_path + ".temp"
+        shutil.copy2(file_path, temp_file)
+        clean_file(temp_file)
         
+        # Copy file đã làm sạch đến đích
+        shutil.copy2(temp_file, final_dest_path)
+        
+        # Xóa file tạm
+        if os.path.exists(temp_file):
+            os.remove(temp_file)
+        
+        # Xóa lệnh khỏi file gốc
+        remove_line(file_path, "//sync now")
+        remove_line(file_path, "#sync now")
+        
+        # Thêm thông báo vào file gốc
         message = f"✅ Đã đồng bộ đến {final_dest_path}"
         add_status_message(file_path, message, "success")
         print(f"📁 {message}")
         
         # Log hoạt động thành công
         log_operation(file_path, "sync", "success", f"Đã đồng bộ đến {final_dest_path}")
+        return True
     except Exception as e:
         error_msg = f"Lỗi khi đồng bộ: {str(e)}"
         add_status_message(file_path, error_msg, "error")
@@ -195,12 +259,16 @@ def sync_file(file_path):
         
         # Log lỗi
         log_operation(file_path, "sync", "error", error_msg)
+        return False
 
-def commit_changes(file_path):
+def commit_changes(file_path, branch=None):
     """Tự động commit và push"""
     try:
         # Thêm thông báo đang xử lý
-        add_status_message(file_path, "Đang thực hiện commit và push...", "info")
+        if branch:
+            add_status_message(file_path, f"Đang commit lên nhánh '{branch}'...", "info")
+        else:
+            add_status_message(file_path, "Đang thực hiện commit...", "info")
         
         repo = git.Repo(WATCH_DIR)
         
@@ -210,32 +278,58 @@ def commit_changes(file_path):
             add_status_message(file_path, message, "info")
             print(f"ℹ️ {message}")
             return
-            
+        
+        # Lưu branch hiện tại để có thể chuyển trở lại sau này
+        current_branch = repo.active_branch.name
+        
+        # Chuyển sang branch mới nếu được chỉ định
+        if branch and branch != current_branch:
+            try:
+                # Kiểm tra xem nhánh đã tồn tại hay chưa
+                branch_exists = branch in [b.name for b in repo.branches]
+                
+                if not branch_exists:
+                    # Tạo nhánh mới nếu chưa tồn tại
+                    repo.git.branch(branch)
+                    message = f"✅ Đã tạo nhánh mới '{branch}'"
+                    print(message)
+                
+                # Chuyển sang nhánh mới
+                repo.git.checkout(branch)
+                message = f"✅ Đã chuyển sang nhánh '{branch}'"
+                print(message)
+                
+            except Exception as e:
+                error_msg = f"Lỗi khi chuyển nhánh sang '{branch}': {str(e)}"
+                add_status_message(file_path, error_msg, "error")
+                print(f"⚠️ {error_msg}")
+                return
+        
         # Thực hiện add và commit
         repo.git.add(A=True)  # Thêm tất cả file
         commit_msg = get_commit_message()
         commit = repo.index.commit(commit_msg)
         
         # Lấy thông tin branch hiện tại
-        branch = repo.active_branch.name
+        branch_name = repo.active_branch.name
         
         # Push lên remote
         try:
             origin = repo.remote(name='origin')
-            push_info = origin.push()
+            push_info = origin.push(refspec=f"{branch_name}:{branch_name}")
             
             # Kiểm tra kết quả push
-            if push_info[0].flags & push_info[0].ERROR:
+            if hasattr(push_info[0], 'flags') and push_info[0].flags & push_info[0].ERROR:
                 raise Exception(f"Push thất bại: {push_info[0].summary}")
                 
             # Nếu thành công
-            message = f"✅ Đã commit và push lên branch '{branch}'\n⏱️ {commit_msg}\n📝 SHA: {commit.hexsha[:7]}"
+            message = f"✅ Đã commit và push lên branch '{branch_name}'\n⏱️ {commit_msg}\n📝 SHA: {commit.hexsha[:7]}"
             add_status_message(file_path, message, "success")
             print(f"✅ {message}")
             
             # Log hoạt động thành công
             log_operation(file_path, "commit", "success", 
-                          f"Commit '{commit_msg}' lên branch '{branch}', SHA: {commit.hexsha[:7]}")
+                          f"Commit '{commit_msg}' lên branch '{branch_name}', SHA: {commit.hexsha[:7]}")
             
         except Exception as e:
             # Nếu push thất bại nhưng commit thành công
@@ -245,10 +339,14 @@ def commit_changes(file_path):
             
             # Log lỗi
             log_operation(file_path, "push", "error", error_msg)
-        
-        # Xóa lệnh
-        remove_line(file_path, "//commit now")
-        remove_line(file_path, "#commit now")
+            
+        # Trở lại nhánh ban đầu nếu đã thay đổi
+        if branch and branch != current_branch:
+            try:
+                repo.git.checkout(current_branch)
+                print(f"✅ Đã trở lại nhánh '{current_branch}'")
+            except Exception as e:
+                print(f"⚠️ Lỗi khi trở lại nhánh '{current_branch}': {str(e)}")
         
     except Exception as e:
         error_msg = f"Lỗi khi commit: {str(e)}"
@@ -258,10 +356,6 @@ def commit_changes(file_path):
         
         # Log lỗi
         log_operation(file_path, "commit", "error", error_msg)
-        
-        # Xóa lệnh nếu có lỗi
-        remove_line(file_path, "//commit now")
-        remove_line(file_path, "#commit now")
 
 def show_status(file_path):
     """Hiển thị trạng thái đồng bộ của file"""
@@ -321,6 +415,48 @@ def show_status(file_path):
         remove_line(file_path, "//status")
         remove_line(file_path, "#status")
 
+def process_command(file_path, content):
+    """Xử lý các lệnh trong file"""
+    try:
+        # Tìm kiếm và xử lý các lệnh đồng bộ
+        if "//sync now" in content or "#sync now" in content:
+            sync_file(file_path)
+            return True
+            
+        # Tìm kiếm lệnh commit nâng cao
+        commit_match = re.search(r"(?://|#)commit\s*([a-zA-Z0-9_\-\/]*)?\.", content)
+        if commit_match:
+            branch = commit_match.group(1).strip() if commit_match.group(1) else None
+            commit_changes(file_path, branch)
+            # Xóa lệnh commit
+            if branch:
+                pattern = f"//commit {branch}." if "//commit" in content else f"#commit {branch}."
+                remove_line(file_path, pattern)
+            else:
+                remove_line(file_path, "//commit.")
+                remove_line(file_path, "#commit.")
+            return True
+            
+        # Tìm kiếm lệnh commit cũ (giữ lại để tương thích)
+        if "//commit now" in content or "#commit now" in content:
+            commit_changes(file_path)
+            remove_line(file_path, "//commit now")
+            remove_line(file_path, "#commit now")
+            return True
+            
+        # Tìm kiếm lệnh status
+        if "//status" in content or "#status" in content:
+            show_status(file_path)
+            return True
+            
+        return False
+    except Exception as e:
+        error_msg = f"Lỗi khi xử lý lệnh: {str(e)}"
+        add_status_message(file_path, error_msg, "error")
+        print(f"⚠️ {error_msg}")
+        traceback.print_exc()
+        return False
+
 class FileEventHandler(FileSystemEventHandler):
     """Xử lý sự kiện khi file thay đổi"""
     def on_modified(self, event):
@@ -332,7 +468,7 @@ class FileEventHandler(FileSystemEventHandler):
         
         # Bỏ qua các file tạm thời, ẩn, hoặc file log của chính chúng ta
         if (file_path.endswith(".swp") or file_path.endswith("~") or 
-            os.path.basename(file_path).startswith(".") or 
+            file_path.endswith(".temp") or os.path.basename(file_path).startswith(".") or 
             file_path == LOG_FILE):
             return
             
@@ -347,15 +483,8 @@ class FileEventHandler(FileSystemEventHandler):
             with open(file_path, "r", encoding="utf-8") as f:
                 content = f.read()
                 
-            # Kiểm tra các lệnh có trong file
-            if "//sync now" in content or "#sync now" in content:
-                sync_file(file_path)
-                
-            if "//commit now" in content or "#commit now" in content:
-                commit_changes(file_path)
-                
-            if "//status" in content or "#status" in content:
-                show_status(file_path)
+            # Xử lý tất cả các lệnh
+            process_command(file_path, content)
                 
         except UnicodeDecodeError:
             # Thử với encoding khác
@@ -363,25 +492,23 @@ class FileEventHandler(FileSystemEventHandler):
                 with open(file_path, "r", encoding="latin-1") as f:
                     content = f.read()
                     
-                if "//sync now" in content or "#sync now" in content:
-                    sync_file(file_path)
-                    
-                if "//commit now" in content or "#commit now" in content:
-                    commit_changes(file_path)
-                    
-                if "//status" in content or "#status" in content:
-                    show_status(file_path)
+                # Xử lý tất cả các lệnh với encoding khác
+                process_command(file_path, content)
                     
             except Exception as e:
                 print(f"⚠️ Lỗi xử lý file {file_path} với encoding khác: {e}")
-                # Không thêm thông báo vào file vì có thể không đọc được encoding
         except Exception as e:
             print(f"⚠️ Lỗi xử lý file {file_path}: {e}")
 
 if __name__ == "__main__":
-    print("🚀 Auto-save running... (Ctrl+C để dừng)")
+    print("🚀 Auto-sync running... (Ctrl+C để dừng)")
     print(f"📂 Đang theo dõi thư mục: {WATCH_DIR}")
     print(f"📝 Log file: {LOG_FILE}")
+    print("📋 Lệnh hỗ trợ:")
+    print("   - //sync now: Đồng bộ file đến đích")
+    print("   - //commit.: Commit lên nhánh hiện tại")
+    print("   - //commit tên_nhánh.: Commit lên nhánh chỉ định")
+    print("   - //status: Kiểm tra trạng thái đồng bộ")
     
     event_handler = FileEventHandler()
     observer = Observer()
@@ -395,3 +522,9 @@ if __name__ == "__main__":
         observer.stop()
         print("\n🛑 Đã dừng chương trình")
     observer.join()
+
+
+/* AUTO-SYNC STATUS START */
+/* ℹ️ Đang thực hiện commit và push... */
+/* ⏱️ Thời gian: 02:28:12 18/03/2025 */
+/* AUTO-SYNC STATUS END */
