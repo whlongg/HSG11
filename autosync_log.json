@@ -68,5 +68,40 @@
     "operation": "status_update",
     "status": "info",
     "message": "\u0110ang th\u1ef1c hi\u1ec7n commit v\u00e0 push..."
+  },
+  {
+    "timestamp": "2025-03-18 02:28:12",
+    "file": "/Users/astrelix/Documents/HSG11/automatic.py",
+    "operation": "status_update",
+    "status": "error",
+    "message": "Commit th\u00e0nh c\u00f4ng nh\u01b0ng push th\u1ea5t b\u1ea1i: Cmd('git') failed due to: exit code(128)\n  cmdline: git push --porcelain -- origin\n  stderr: 'fatal: The current branch dev has no upstream branch.'"
+  },
+  {
+    "timestamp": "2025-03-18 02:28:12",
+    "file": "/Users/astrelix/Documents/HSG11/automatic.py",
+    "operation": "push",
+    "status": "error",
+    "message": "Commit th\u00e0nh c\u00f4ng nh\u01b0ng push th\u1ea5t b\u1ea1i: Cmd('git') failed due to: exit code(128)\n  cmdline: git push --porcelain -- origin\n  stderr: 'fatal: The current branch dev has no upstream branch.'"
+  },
+  {
+    "timestamp": "2025-03-18 02:28:12",
+    "file": "/Users/astrelix/Documents/HSG11/automatic.py",
+    "operation": "status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f Kh\u00f4ng t\u00ecm th\u1ea5y \u0111\u01b0\u1eddng d\u1eabn \u0111\u00edch trong file"
+  },
+  {
+    "timestamp": "2025-03-18 02:28:18",
+    "file": "/Users/astrelix/Documents/HSG11/automatic.py",
+    "operation": "status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f Kh\u00f4ng t\u00ecm th\u1ea5y \u0111\u01b0\u1eddng d\u1eabn \u0111\u00edch trong file"
+  },
+  {
+    "timestamp": "2025-03-18 02:28:18",
+    "file": "/Users/astrelix/Documents/HSG11/automatic.py",
+    "operation": "status_update",
+    "status": "info",
+    "message": "\u0110ang th\u1ef1c hi\u1ec7n commit v\u00e0 push..."
   }
 ]
