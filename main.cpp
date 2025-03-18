@@ -1,8 +1,4 @@
 #include <bits/stdc++.h>
-/* AUTO-SYNC STATUS START */
-/* ℹ️ Committing changes... */
-/* ⏱️ Thời gian: 23:11:22 18/03/2025 */
-/* AUTO-SYNC STATUS END */
 using namespace std;
 #define ll long long
 #define fi first
@@ -31,5 +27,9 @@ int32_t main(){
     return 0;
 }
 
+//commit.
+/* AUTO-SYNC STATUS START */
+/* ℹ️ Committing changes... */
+/* ⏱️ Thời gian: 23:11:44 18/03/2025 */
+/* AUTO-SYNC STATUS END */
 
-//commit . 
