@@ -526,21 +526,3 @@ if __name__ == "__main__":
         observer.stop()
         print("\n🛑 Đã dừng chương trình")
     observer.join()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* AUTO-SYNC STATUS START */
-/* ℹ️ Đang thực hiện commit... */
-/* ⏱️ Thời gian: 02:45:57 18/03/2025 */
-/* AUTO-SYNC STATUS END */
