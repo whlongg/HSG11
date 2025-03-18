@@ -1,26 +1,5 @@
 [
   {
-    "timestamp": "2025-03-18 21:51:57",
-    "file": "/Users/astrelix/Documents/CP/main.cpp",
-    "operation": "status_check",
-    "status": "info",
-    "message": "\u26a0\ufe0f Source file is newer than destination\n\ud83d\udcdd Source: 21:51:57 18/03/2025\n\ud83d\udcdd Destination: 21:51:32 18/03/2025"
-  },
-  {
-    "timestamp": "2025-03-18 21:52:01",
-    "file": "/Users/astrelix/Documents/CP/main.cpp",
-    "operation": "status_update",
-    "status": "info",
-    "message": "\u26a0\ufe0f Source file is newer than destination\n\ud83d\udcdd Source: 21:52:01 18/03/2025\n\ud83d\udcdd Destination: 21:51:32 18/03/2025"
-  },
-  {
-    "timestamp": "2025-03-18 21:52:01",
-    "file": "/Users/astrelix/Documents/CP/main.cpp",
-    "operation": "status_check",
-    "status": "info",
-    "message": "\u26a0\ufe0f Source file is newer than destination\n\ud83d\udcdd Source: 21:52:01 18/03/2025\n\ud83d\udcdd Destination: 21:51:32 18/03/2025"
-  },
-  {
     "timestamp": "2025-03-18 21:54:27",
     "file": "/Users/astrelix/Documents/CP/main.cpp",
     "operation": "status_update",
@@ -694,6 +673,27 @@
   },
   {
     "timestamp": "2025-03-18 23:04:42",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "info",
+    "message": "Committing changes..."
+  },
+  {
+    "timestamp": "2025-03-18 23:04:43",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Committed and pushed to branch 'dev'\n\u23f1\ufe0f Auto commit at 23:04:42 18/03/2025\n\ud83d\udcdd SHA: 7e7dfe6"
+  },
+  {
+    "timestamp": "2025-03-18 23:04:43",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "commit",
+    "status": "success",
+    "message": "Commit 'Auto commit at 23:04:42 18/03/2025' to branch 'dev', SHA: 7e7dfe6"
+  },
+  {
+    "timestamp": "2025-03-18 23:04:43",
     "file": "/Users/astrelix/Documents/HSG11/main.cpp",
     "operation": "inline_status_update",
     "status": "info",
