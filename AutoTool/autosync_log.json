@@ -1,26 +1,5 @@
 [
   {
-    "timestamp": "2025-03-18 23:04:35",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "info",
-    "message": "Committing changes..."
-  },
-  {
-    "timestamp": "2025-03-18 23:04:37",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "success",
-    "message": "\u2705 Committed and pushed to branch 'dev'\n\u23f1\ufe0f Auto commit at 23:04:35 18/03/2025\n\ud83d\udcdd SHA: 0d954bf"
-  },
-  {
-    "timestamp": "2025-03-18 23:04:37",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "commit",
-    "status": "success",
-    "message": "Commit 'Auto commit at 23:04:35 18/03/2025' to branch 'dev', SHA: 0d954bf"
-  },
-  {
     "timestamp": "2025-03-18 23:04:37",
     "file": "/Users/astrelix/Documents/HSG11/main.cpp",
     "operation": "inline_status_update",
@@ -694,6 +673,27 @@
   },
   {
     "timestamp": "2025-03-18 23:05:33",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "info",
+    "message": "Committing changes..."
+  },
+  {
+    "timestamp": "2025-03-18 23:05:34",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Committed and pushed to branch 'dev'\n\u23f1\ufe0f Auto commit at 23:05:33 18/03/2025\n\ud83d\udcdd SHA: f9abd3b"
+  },
+  {
+    "timestamp": "2025-03-18 23:05:34",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "commit",
+    "status": "success",
+    "message": "Commit 'Auto commit at 23:05:33 18/03/2025' to branch 'dev', SHA: f9abd3b"
+  },
+  {
+    "timestamp": "2025-03-18 23:05:34",
     "file": "/Users/astrelix/Documents/HSG11/main.cpp",
     "operation": "inline_status_update",
     "status": "info",
