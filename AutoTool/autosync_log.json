@@ -1,0 +1,632 @@
+[
+  {
+    "timestamp": "2025-03-18 21:42:50",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: 1"
+  },
+  {
+    "timestamp": "2025-03-18 21:51:12",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: 1"
+  },
+  {
+    "timestamp": "2025-03-18 21:51:32",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/CP/test/test11.cpp"
+  },
+  {
+    "timestamp": "2025-03-18 21:51:32",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/CP/test/test11.cpp"
+  },
+  {
+    "timestamp": "2025-03-18 21:51:44",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_update",
+    "status": "info",
+    "message": "Committing changes..."
+  },
+  {
+    "timestamp": "2025-03-18 21:51:45",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_update",
+    "status": "error",
+    "message": "Commit successful but push failed: Cmd('git') failed due to: exit code(128)\n  cmdline: git push --porcelain -- origin main:main\n  stderr: 'fatal: repository 'https://github.com/hlongg08/CP.git/' not found'"
+  },
+  {
+    "timestamp": "2025-03-18 21:51:45",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "push",
+    "status": "error",
+    "message": "Commit successful but push failed: Cmd('git') failed due to: exit code(128)\n  cmdline: git push --porcelain -- origin main:main\n  stderr: 'fatal: repository 'https://github.com/hlongg08/CP.git/' not found'"
+  },
+  {
+    "timestamp": "2025-03-18 21:51:57",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_update",
+    "status": "info",
+    "message": "\u26a0\ufe0f Source file is newer than destination\n\ud83d\udcdd Source: 21:51:57 18/03/2025\n\ud83d\udcdd Destination: 21:51:32 18/03/2025"
+  },
+  {
+    "timestamp": "2025-03-18 21:51:57",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_check",
+    "status": "info",
+    "message": "\u26a0\ufe0f Source file is newer than destination\n\ud83d\udcdd Source: 21:51:57 18/03/2025\n\ud83d\udcdd Destination: 21:51:32 18/03/2025"
+  },
+  {
+    "timestamp": "2025-03-18 21:52:01",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_update",
+    "status": "info",
+    "message": "\u26a0\ufe0f Source file is newer than destination\n\ud83d\udcdd Source: 21:52:01 18/03/2025\n\ud83d\udcdd Destination: 21:51:32 18/03/2025"
+  },
+  {
+    "timestamp": "2025-03-18 21:52:01",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_check",
+    "status": "info",
+    "message": "\u26a0\ufe0f Source file is newer than destination\n\ud83d\udcdd Source: 21:52:01 18/03/2025\n\ud83d\udcdd Destination: 21:51:32 18/03/2025"
+  },
+  {
+    "timestamp": "2025-03-18 21:54:27",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 21:54:27",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 21:55:12",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 21:55:12",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 21:55:25",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 21:55:25",
+    "file": "/Users/astrelix/Documents/CP/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:13:17",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:13:17",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:13:42",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: 1"
+  },
+  {
+    "timestamp": "2025-03-18 22:14:20",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hellobro"
+  },
+  {
+    "timestamp": "2025-03-18 22:19:36",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hello bro"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:41",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:41",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:44",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:44",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:46",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:46",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:47",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:47",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:57",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:20:57",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:07",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:07",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:08",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:08",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:14",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:14",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:16",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:16",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:18",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:18",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:26",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:26",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:30",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:30",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:31",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:31",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:35",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:35",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:45",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:45",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:55",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:55",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:59",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:21:59",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:22:09",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:22:09",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:22:11",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:22:11",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-03-18 22:23:41",
+    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
+    "operation": "status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-03-18 22:24:07",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hello bro"
+  },
+  {
+    "timestamp": "2025-03-18 22:24:18",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hello bro"
+  },
+  {
+    "timestamp": "2025-03-18 22:25:36",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:25:36",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:25:59",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: 1"
+  },
+  {
+    "timestamp": "2025-03-18 22:26:38",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hellobro"
+  },
+  {
+    "timestamp": "2025-03-18 22:30:01",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hellobro"
+  },
+  {
+    "timestamp": "2025-03-18 22:31:28",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hellobro"
+  },
+  {
+    "timestamp": "2025-03-18 22:32:15",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hellobro"
+  },
+  {
+    "timestamp": "2025-03-18 22:35:40",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hellobro"
+  },
+  {
+    "timestamp": "2025-03-18 22:37:36",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: hellobro"
+  },
+  {
+    "timestamp": "2025-03-18 22:40:23",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: 112020202"
+  },
+  {
+    "timestamp": "2025-03-18 22:42:54",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Executed with args: 11221221"
+  },
+  {
+    "timestamp": "2025-03-18 22:45:53",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Execution successful"
+  },
+  {
+    "timestamp": "2025-03-18 22:46:20",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Execution successful"
+  },
+  {
+    "timestamp": "2025-03-18 22:48:50",
+    "file": "/Users/astrelix/Documents/CP/test.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Execution successful"
+  },
+  {
+    "timestamp": "2025-03-18 22:54:29",
+    "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:54:29",
+    "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:55:28",
+    "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Execution successful"
+  },
+  {
+    "timestamp": "2025-03-18 22:57:49",
+    "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
+    "operation": "run",
+    "status": "success",
+    "message": "Execution successful"
+  },
+  {
+    "timestamp": "2025-03-18 22:59:23",
+    "file": "/Users/astrelix/Documents/HSG11/main.py",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:59:23",
+    "file": "/Users/astrelix/Documents/HSG11/main.py",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:59:42",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 22:59:42",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 23:01:50",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 23:01:50",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 23:02:28",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-18 23:02:28",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-18 23:04:31",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "info",
+    "message": "Committing changes..."
+  }
+]
