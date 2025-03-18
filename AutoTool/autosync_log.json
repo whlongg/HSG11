@@ -1,26 +1,5 @@
 [
   {
-    "timestamp": "2025-03-18 22:57:49",
-    "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
-    "operation": "run",
-    "status": "success",
-    "message": "Execution successful"
-  },
-  {
-    "timestamp": "2025-03-18 22:59:23",
-    "file": "/Users/astrelix/Documents/HSG11/main.py",
-    "operation": "inline_status_update",
-    "status": "success",
-    "message": "\u2705 Template applied to current file"
-  },
-  {
-    "timestamp": "2025-03-18 22:59:23",
-    "file": "/Users/astrelix/Documents/HSG11/main.py",
-    "operation": "cp_template",
-    "status": "success",
-    "message": "Applied template to current file"
-  },
-  {
     "timestamp": "2025-03-18 22:59:42",
     "file": "/Users/astrelix/Documents/HSG11/main.cpp",
     "operation": "inline_status_update",
@@ -694,6 +673,27 @@
   },
   {
     "timestamp": "2025-03-18 23:05:24",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "info",
+    "message": "Committing changes..."
+  },
+  {
+    "timestamp": "2025-03-18 23:05:26",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Committed and pushed to branch 'dev'\n\u23f1\ufe0f Auto commit at 23:05:24 18/03/2025\n\ud83d\udcdd SHA: e036c27"
+  },
+  {
+    "timestamp": "2025-03-18 23:05:26",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "commit",
+    "status": "success",
+    "message": "Commit 'Auto commit at 23:05:24 18/03/2025' to branch 'dev', SHA: e036c27"
+  },
+  {
+    "timestamp": "2025-03-18 23:05:26",
     "file": "/Users/astrelix/Documents/HSG11/main.cpp",
     "operation": "inline_status_update",
     "status": "info",
