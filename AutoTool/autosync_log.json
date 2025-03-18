@@ -1,26 +1,5 @@
 [
   {
-    "timestamp": "2025-03-18 22:22:09",
-    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
-    "operation": "inline_status_update",
-    "status": "error",
-    "message": "\u26a0\ufe0f No target path found in file"
-  },
-  {
-    "timestamp": "2025-03-18 22:22:09",
-    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
-    "operation": "sync",
-    "status": "error",
-    "message": "No target path found"
-  },
-  {
-    "timestamp": "2025-03-18 22:22:11",
-    "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
-    "operation": "inline_status_update",
-    "status": "error",
-    "message": "\u26a0\ufe0f No target path found in file"
-  },
-  {
     "timestamp": "2025-03-18 22:22:11",
     "file": "/Users/astrelix/Documents/CP/AutoTool/handlers/sync_handler.py",
     "operation": "sync",
@@ -694,6 +673,27 @@
   },
   {
     "timestamp": "2025-03-18 23:05:09",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "info",
+    "message": "Committing changes..."
+  },
+  {
+    "timestamp": "2025-03-18 23:05:11",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Committed and pushed to branch 'dev'\n\u23f1\ufe0f Auto commit at 23:05:10 18/03/2025\n\ud83d\udcdd SHA: f19fdba"
+  },
+  {
+    "timestamp": "2025-03-18 23:05:11",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "commit",
+    "status": "success",
+    "message": "Commit 'Auto commit at 23:05:10 18/03/2025' to branch 'dev', SHA: f19fdba"
+  },
+  {
+    "timestamp": "2025-03-18 23:05:11",
     "file": "/Users/astrelix/Documents/HSG11/main.cpp",
     "operation": "inline_status_update",
     "status": "info",
