@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 /* AUTO-SYNC STATUS START */
 /* ℹ️ Committing changes... */
-/* ⏱️ Thời gian: 23:11:20 18/03/2025 */
+/* ⏱️ Thời gian: 23:11:22 18/03/2025 */
 /* AUTO-SYNC STATUS END */
 using namespace std;
 #define ll long long
