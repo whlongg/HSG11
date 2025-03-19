@@ -1,10 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-//commit main.
-/* AUTO-SYNC STATUS START */
-/* ℹ️ Committing to branch 'main'... */
-/* ⏱️ Thời gian: 23:37:46 19/03/2025 */
-/* AUTO-SYNC STATUS END */
 const int MAXN = 5005;
 const int MAXM = 1000005;
 const int MAXQ = 100005;

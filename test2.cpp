@@ -12,4 +12,8 @@ int32_t main(){
 		cout << "Nguyen Hoang Longdzs1tg";
 }
 
-
+//commit main.
+/* AUTO-SYNC STATUS START */
+/* ℹ️ Committing to branch 'main'... */
+/* ⏱️ Thời gian: 23:38:47 19/03/2025 */
+/* AUTO-SYNC STATUS END */
