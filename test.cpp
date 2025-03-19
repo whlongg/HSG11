@@ -1,11 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 using ll = long long;
-//commit main.
-/* AUTO-SYNC STATUS START */
-/* ℹ️ Committing to branch 'main'... */
-/* ⏱️ Thời gian: 23:37:00 19/03/2025 */
-/* AUTO-SYNC STATUS END */
 int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
