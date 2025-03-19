@@ -1,138 +1,5 @@
 [
   {
-    "timestamp": "2025-03-18 23:05:46",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "info",
-    "message": "Committing changes..."
-  },
-  {
-    "timestamp": "2025-03-18 23:05:48",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "success",
-    "message": "\u2705 Committed and pushed to branch 'dev'\n\u23f1\ufe0f Auto commit at 23:05:46 18/03/2025\n\ud83d\udcdd SHA: 1bd50a0"
-  },
-  {
-    "timestamp": "2025-03-18 23:05:48",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "commit",
-    "status": "success",
-    "message": "Commit 'Auto commit at 23:05:46 18/03/2025' to branch 'dev', SHA: 1bd50a0"
-  },
-  {
-    "timestamp": "2025-03-18 23:05:48",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "info",
-    "message": "Committing changes..."
-  },
-  {
-    "timestamp": "2025-03-18 23:05:50",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "success",
-    "message": "\u2705 Committed and pushed to branch 'dev'\n\u23f1\ufe0f Auto commit at 23:05:48 18/03/2025\n\ud83d\udcdd SHA: ed65b68"
-  },
-  {
-    "timestamp": "2025-03-18 23:05:50",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "commit",
-    "status": "success",
-    "message": "Commit 'Auto commit at 23:05:48 18/03/2025' to branch 'dev', SHA: ed65b68"
-  },
-  {
-    "timestamp": "2025-03-18 23:05:50",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "info",
-    "message": "Committing changes..."
-  },
-  {
-    "timestamp": "2025-03-18 23:05:51",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "success",
-    "message": "\u2705 Committed and pushed to branch 'dev'\n\u23f1\ufe0f Auto commit at 23:05:50 18/03/2025\n\ud83d\udcdd SHA: 3d8e128"
-  },
-  {
-    "timestamp": "2025-03-18 23:05:51",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "commit",
-    "status": "success",
-    "message": "Commit 'Auto commit at 23:05:50 18/03/2025' to branch 'dev', SHA: 3d8e128"
-  },
-  {
-    "timestamp": "2025-03-18 23:07:51",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "info",
-    "message": "Committing to branch 'dev'..."
-  },
-  {
-    "timestamp": "2025-03-18 23:07:51",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "status_update",
-    "status": "error",
-    "message": "Error during commit: 'FileHandler' object has no attribute 'comment_line'"
-  },
-  {
-    "timestamp": "2025-03-18 23:07:51",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "commit",
-    "status": "error",
-    "message": "Error during commit: 'FileHandler' object has no attribute 'comment_line'"
-  },
-  {
-    "timestamp": "2025-03-18 23:07:57",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "info",
-    "message": "Committing to branch 'dev'..."
-  },
-  {
-    "timestamp": "2025-03-18 23:07:57",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "status_update",
-    "status": "error",
-    "message": "Error during commit: 'FileHandler' object has no attribute 'comment_line'"
-  },
-  {
-    "timestamp": "2025-03-18 23:07:57",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "commit",
-    "status": "error",
-    "message": "Error during commit: 'FileHandler' object has no attribute 'comment_line'"
-  },
-  {
-    "timestamp": "2025-03-18 23:08:55",
-    "file": "/Users/astrelix/Documents/HSG11/AutoTool/handlers/git_handler.py",
-    "operation": "inline_status_update",
-    "status": "info",
-    "message": "Committing changes..."
-  },
-  {
-    "timestamp": "2025-03-18 23:08:55",
-    "file": "/Users/astrelix/Documents/HSG11/AutoTool/handlers/git_handler.py",
-    "operation": "status_update",
-    "status": "error",
-    "message": "Error during commit: 'FileHandler' object has no attribute 'comment_line'"
-  },
-  {
-    "timestamp": "2025-03-18 23:08:55",
-    "file": "/Users/astrelix/Documents/HSG11/AutoTool/handlers/git_handler.py",
-    "operation": "commit",
-    "status": "error",
-    "message": "Error during commit: 'FileHandler' object has no attribute 'comment_line'"
-  },
-  {
-    "timestamp": "2025-03-18 23:09:05",
-    "file": "/Users/astrelix/Documents/HSG11/AutoTool/handlers/git_handler.py",
-    "operation": "inline_status_update",
-    "status": "info",
-    "message": "Committing changes..."
-  },
-  {
     "timestamp": "2025-03-18 23:09:05",
     "file": "/Users/astrelix/Documents/HSG11/AutoTool/handlers/git_handler.py",
     "operation": "status_update",
@@ -698,5 +565,138 @@
     "operation": "inline_status_update",
     "status": "info",
     "message": "Committing changes..."
+  },
+  {
+    "timestamp": "2025-03-18 23:11:45",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Committed and pushed to branch 'dev'\n\u23f1\ufe0f Auto commit at 23:11:44 18/03/2025\n\ud83d\udcdd SHA: 3ea59ad"
+  },
+  {
+    "timestamp": "2025-03-18 23:11:45",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "commit",
+    "status": "success",
+    "message": "Commit 'Auto commit at 23:11:44 18/03/2025' to branch 'dev', SHA: 3ea59ad"
+  },
+  {
+    "timestamp": "2025-03-18 23:25:50",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/HCM23/hcm_thpt_23_b.cpp"
+  },
+  {
+    "timestamp": "2025-03-18 23:25:50",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/HCM23/hcm_thpt_23_b.cpp"
+  },
+  {
+    "timestamp": "2025-03-19 19:41:37",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/HCM23/hcm_thpt_23_b.cpp"
+  },
+  {
+    "timestamp": "2025-03-19 19:41:37",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/HCM23/hcm_thpt_23_b.cpp"
+  },
+  {
+    "timestamp": "2025-03-19 19:41:46",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Files are already identical, no sync needed"
+  },
+  {
+    "timestamp": "2025-03-19 19:41:46",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Files already identical"
+  },
+  {
+    "timestamp": "2025-03-19 20:10:47",
+    "file": "/Users/astrelix/Documents/HSG11/VNOJ/Bedao OI Contest 6/Day 2/bedao_oi6_d.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/main.cpp"
+  },
+  {
+    "timestamp": "2025-03-19 20:10:47",
+    "file": "/Users/astrelix/Documents/HSG11/VNOJ/Bedao OI Contest 6/Day 2/bedao_oi6_d.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/main.cpp"
+  },
+  {
+    "timestamp": "2025-03-19 21:38:35",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-19 21:38:35",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-19 22:04:28",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/VNOJ/foollis.cpp"
+  },
+  {
+    "timestamp": "2025-03-19 22:04:28",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/VNOJ/foollis.cpp"
+  },
+  {
+    "timestamp": "2025-03-19 22:04:51",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-19 22:04:51",
+    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-19 23:33:34",
+    "file": "/Users/astrelix/Documents/HSG11/LoTrinhHoc/7ngayOnTinh.md",
+    "operation": "inline_status_update",
+    "status": "info",
+    "message": "Committing to branch 'main'..."
+  },
+  {
+    "timestamp": "2025-03-19 23:33:34",
+    "file": "/Users/astrelix/Documents/HSG11/LoTrinhHoc/7ngayOnTinh.md",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "Error switching to branch 'main': Cmd('git') failed due to: exit code(1)\n  cmdline: git checkout main\n  stderr: 'error: Your local changes to the following files would be overwritten by checkout:\n\tAutoTool/autosync_log.json\n\tAutoTool/template.cpp\n\tmain.cpp\n\toutput/main\nPlease commit your changes or stash them before you switch branches.\nerror: The following untracked working tree files would be overwritten by checkout:\n\ttest.py\nPlease move or remove them before you switch branches.\nAborting'"
+  },
+  {
+    "timestamp": "2025-03-19 23:33:34",
+    "file": "/Users/astrelix/Documents/HSG11/LoTrinhHoc/7ngayOnTinh.md",
+    "operation": "branch_switch",
+    "status": "error",
+    "message": "Error switching to branch 'main': Cmd('git') failed due to: exit code(1)\n  cmdline: git checkout main\n  stderr: 'error: Your local changes to the following files would be overwritten by checkout:\n\tAutoTool/autosync_log.json\n\tAutoTool/template.cpp\n\tmain.cpp\n\toutput/main\nPlease commit your changes or stash them before you switch branches.\nerror: The following untracked working tree files would be overwritten by checkout:\n\ttest.py\nPlease move or remove them before you switch branches.\nAborting'"
   }
 ]

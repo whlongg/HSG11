@@ -1,5 +1,4 @@
-
-//Nguyenhoanglong
+//HCM23/hcm_thpt_23_b.cpp
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -7,8 +6,12 @@ using namespace std;
 #define se second
 #define file(inp, out) freopen((inp), "r", stdin);freopen((out), "w", stdout);
 
+int process(){
+    return 0;
+}
+
 void solve(){
-    return;
+    
 }
 
 int32_t main(){
@@ -20,3 +23,4 @@ int32_t main(){
         solve();
     return 0;
 }
+
