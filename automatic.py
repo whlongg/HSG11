@@ -181,7 +181,7 @@ def sync_file(file_path):
         remove_line(file_path, "//sync now")  # Xóa lệnh cho comment //
 /* AUTO-SYNC STATUS START */
 /* ⚠️ ⚠️ No target path found in file */
-/* ⏱️ Thời gian: 23:36:16 19/03/2025 */
+/* ⏱️ Thời gian: 23:36:56 19/03/2025 */
 /* AUTO-SYNC STATUS END */
         remove_line(file_path, "#sync now")   # Xóa lệnh cho comment #
         
