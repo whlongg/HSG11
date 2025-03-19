@@ -179,6 +179,10 @@ def sync_file(file_path):
         shutil.copy2(file_path, final_dest_path)
         
         remove_line(file_path, "//sync now")  # Xóa lệnh cho comment //
+/* AUTO-SYNC STATUS START */
+/* ⚠️ ⚠️ No target path found in file */
+/* ⏱️ Thời gian: 23:36:06 19/03/2025 */
+/* AUTO-SYNC STATUS END */
         remove_line(file_path, "#sync now")   # Xóa lệnh cho comment #
         
         message = f"✅ Đã đồng bộ đến {final_dest_path}"
