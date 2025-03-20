@@ -7,4 +7,5 @@ test2.cpp
 test.py
 AutoTool/__pycache__
 AutoTool/autosync_log.json
+AutoTool/handlers/__pycache__
 .vscode
