@@ -1,1 +1,10 @@
 rules.txt
+input.txt
+ouput.txt
+test2
+test.cpp
+test2.cpp 
+test.py
+AutoTool/__pycache__
+AutoTool/autosync_log.json
+.vscode

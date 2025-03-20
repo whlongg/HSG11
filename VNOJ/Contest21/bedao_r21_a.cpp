@@ -13,7 +13,6 @@ void init(){
 }
 
 void solve(){
-    int n, k; cin >> n >> k;
     
 }
 

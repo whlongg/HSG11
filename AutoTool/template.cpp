@@ -1,5 +1,3 @@
-//VNOJ/Contest21/bedao_r21_a.cpp
-//https://oj.vnoi.info/problem/bedao_r21_a
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -13,16 +11,14 @@ void init(){
 }
 
 void solve(){
-    int n, k; cin >> n >> k;
-    
+
 }
 
 int32_t main(void){
     FASTIO;
     init();
     int q = 1;
-    cin >> q;
+    //cin >> q;
     while(q--)
         solve();
 }
-
