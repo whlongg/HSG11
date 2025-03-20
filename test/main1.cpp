@@ -11,8 +11,9 @@ int32_t main(){
 	for(auto x: mp)
 		cout << "Nguyen Hoang Longdzs1tg";
 }
+
 //sync now
 /* AUTO-SYNC STATUS START */
-/* ⚠️ ⚠️ Source and destination are the same, skipping */
-/* ⏱️ Thời gian: 23:38:38 19/03/2025 */
+/* ⚠️ ⚠️ File nguồn và đích giống nhau, bỏ qua */
+/* ⏱️ Thời gian: 00:25:59 21/03/2025 */
 /* AUTO-SYNC STATUS END */

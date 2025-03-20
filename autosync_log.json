@@ -40,5 +40,33 @@
     "operation": "status_update",
     "status": "info",
     "message": "\u0110ang th\u1ef1c hi\u1ec7n commit v\u00e0 push..."
+  },
+  {
+    "timestamp": "2025-03-21 00:25:59",
+    "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
+    "operation": "status_update",
+    "status": "success",
+    "message": "\u2705 \u0110\u00e3 \u0111\u1ed3ng b\u1ed9 \u0111\u1ebfn /Users/astrelix/Documents/HSG11/test/main1.cpp"
+  },
+  {
+    "timestamp": "2025-03-21 00:25:59",
+    "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "\u0110\u00e3 \u0111\u1ed3ng b\u1ed9 \u0111\u1ebfn /Users/astrelix/Documents/HSG11/test/main1.cpp"
+  },
+  {
+    "timestamp": "2025-03-21 00:25:59",
+    "file": "/Users/astrelix/Documents/HSG11/test/main1.cpp",
+    "operation": "status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f File ngu\u1ed3n v\u00e0 \u0111\u00edch gi\u1ed1ng nhau, b\u1ecf qua"
+  },
+  {
+    "timestamp": "2025-03-21 00:26:09",
+    "file": "/Users/astrelix/Documents/HSG11/test2.cpp",
+    "operation": "status_update",
+    "status": "info",
+    "message": "\u0110ang th\u1ef1c hi\u1ec7n commit v\u00e0 push..."
   }
 ]
