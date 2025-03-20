@@ -11,10 +11,15 @@ using namespace std;
 void init(){
     file("input.txt", "output.txt");
 }
+//commit.
+/* AUTO-SYNC STATUS START */
+/* ℹ️ Committing changes... */
+/* ⏱️ Thời gian: 01:17:43 21/03/2025 */
+/* AUTO-SYNC STATUS END */
 
 void solve(){
     int n, k; cin >> n >> k;
-    
+
 }
 
 int32_t main(void){

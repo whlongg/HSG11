@@ -12,8 +12,10 @@ void init(){
     file("input.txt", "output.txt");
 }
 
+
 void solve(){
-    
+    int n, k; cin >> n >> k;
+
 }
 
 int32_t main(void){
