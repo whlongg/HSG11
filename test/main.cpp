@@ -1,4 +1,4 @@
-//DTQGSPRING/ContestDP/a6.cpp
+//test/main.cpp
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -10,7 +10,6 @@ using namespace std;
 void init(){
     file("input.txt", "output.txt");
 }
-
 void solve(){
     int n; cin >> n;
     int a[n+1];
@@ -19,7 +18,6 @@ void solve(){
     for(int i = n; i >= 1; --i)
         cout << a[i] << '\n';
 }
-
 int32_t main(void){
     FASTIO;
     init();
