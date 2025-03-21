@@ -10,7 +10,6 @@ using namespace std;
 void init(){
     file("input.txt", "output.txt");
 }
-
 void solve(){
     int n; cin >> n;
     int a[n+1];

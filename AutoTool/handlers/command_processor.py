@@ -54,15 +54,12 @@ class CommandProcessor:
             if "//status" in content or "#status" in content:
                 self.sync_handler.show_status(file_path)
                 return True
-            
-            # Look for run command with arguments
-            run_match = re.search(r"(?://|#)\s*run\s+(.*?)\s+now", content)
-            if run_match:
-                args = run_match.group(1).strip()
-                print (args)
-                success = self.sync_handler.run_code(file_path, args)
-                return success
-            
+            # Check for simple run command
+            if "//run" in content or "#run" in content:
+                # Only process if it's not part of the more complex "run ... now" pattern
+                if "//run " not in content and "#run " not in content:
+                    success = self.sync_handler.run_code(file_path)
+                    return success   
             # Look for cp command with file name parameter
             cp_match = re.search(r"(?://|#)cp\s+([a-zA-Z0-9_\-]+)", content)
             if cp_match:

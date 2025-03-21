@@ -8,7 +8,9 @@ import traceback
 import filecmp
 import re
 from typing import Optional, Tuple, Dict, List
-
+# Compare modification times
+import datetime
+import subprocess
 from ..utils.file_handler import FileHandler
 from ..utils.status_handler import StatusHandler
 from ..utils.logger import Logger
@@ -152,9 +154,7 @@ class SyncHandler:
                 message = f"⚠️ Destination file doesn't exist: {final_dest_path}"
                 self.status_handler.add_inline_status_message(file_path, status_line, message, "error")
                 return
-                
-            # Compare modification times
-            import datetime
+    
             src_mtime = os.path.getmtime(file_path)
             dest_mtime = os.path.getmtime(final_dest_path)
             
@@ -252,193 +252,88 @@ class SyncHandler:
             self.logger.log_operation(file_path, "cp_template", "error", error_msg)
             return False
     
-    def run_code(self, file_path: str, args: str) -> bool:
-        """Run the code with given arguments and show output at the command's location
-        
-        Args:
-            file_path (str): Path to the source code file
-            args (str): Command line arguments or input data as a string
-                
-        Returns:
-            bool: True if execution was successful, False otherwise
-        """
+    def run_code(self, file_path: str) -> bool:
+        """Run code file and display output"""
         try:
-            import subprocess
-            import tempfile
-            import datetime
-            import os
-            import re
-            import shutil
+            # Find the line where the run command was issued
+            run_line = self.status_handler.find_command_line(file_path, "//run")
+            if run_line == -1:
+                run_line = self.status_handler.find_command_line(file_path, "#run")
             
+            if run_line == -1:
+                self.logger.log_operation(file_path, "run_code", "error", "No run command found")
+                return False
+                
             # Get file extension to determine language
             _, ext = os.path.splitext(file_path)
             
+            # Define output directory
+            output_dir = os.path.join(os.path.dirname(file_path), "output")
+            os.makedirs(output_dir, exist_ok=True)
+            
+            # Base filename without extension
+            base_name = os.path.basename(file_path).split('.')[0]
+            output_file = os.path.join(output_dir, base_name)
+            
+            # Execute based on file type
+            result = None
+            
             if ext.lower() == '.cpp':
-                # Create temporary executable
-                temp_dir = tempfile.mkdtemp()
-                exe_path = os.path.join(temp_dir, "program")
-                
-                # Compile the code
-                compile_cmd = ["g++", "-std=c++17", "-O2", file_path, "-o", exe_path]
-                compile_process = subprocess.run(compile_cmd, capture_output=True, text=True)
-                
-                if compile_process.returncode != 0:
-                    # Compilation failed
-                    error_msg = f"⚠️ Compilation error:\n{compile_process.stderr}"
-                    self.status_handler.add_status_message(file_path, error_msg, "error")
-                    print(error_msg)
-                    self.logger.log_operation(file_path, "run", "error", "Compilation failed")
-                    return False
-                
-                # Tạo file tạm để chứa input
-                input_file = os.path.join(temp_dir, "input.txt")
-                with open(input_file, "w", encoding="utf-8") as f:
-                    f.write(args)
-                
-                # Tạo file tạm để chứa output
-                output_file = os.path.join(temp_dir, "output.txt")
-                
-                # Chạy executable với input từ file và output vào file
-                try:
-                    with open(input_file, "r") as infile, open(output_file, "w") as outfile:
-                        process = subprocess.Popen(
-                            [exe_path],
-                            stdin=infile,
-                            stdout=outfile,
-                            stderr=subprocess.PIPE,
-                            text=True
-                        )
-                    
-                    stderr = process.communicate(timeout=5)[1]
-                    return_code = process.returncode
-                    
-                    # Đọc output từ file
-                    with open(output_file, "r", encoding="utf-8") as f:
-                        stdout = f.read()
-                    
-                except subprocess.TimeoutExpired:
-                    process.kill()
-                    stderr = process.communicate()[1]
-                    stdout = "Execution timed out"
-                    error_msg = "⚠️ Program execution timed out (limit: 5 seconds)"
-                    self.status_handler.add_status_message(file_path, error_msg, "error")
-                    print(error_msg)
-                    self.logger.log_operation(file_path, "run", "error", "Execution timed out")
-                    return False
-                
-                # Get execution timestamp
-                timestamp = datetime.datetime.now().strftime("%H:%M:%S %d/%m/%Y")
-                
-                # Find the run command line
-                run_line_idx = -1
-                run_pattern = re.compile(r"//run\s+|#run\s+")
-                
-                with open(file_path, "r", encoding="utf-8") as f:
-                    lines = f.readlines()
-                    for i, line in enumerate(lines):
-                        if run_pattern.search(line):
-                            run_line_idx = i
-                            break
-                
-                if run_line_idx == -1:
-                    run_line_idx = len(lines) - 1
-                    print(f"⚠️ Could not find run command line in {file_path}")
-                    self.logger.log_operation(file_path, "run", "warning", "Could not find run command line")
-                
-                # Format the output message
-                output_lines = [
-                    "// -------- RUN RESULT --------\n",
-                    f"// ⏱️ Executed at: {timestamp}\n",
-                    "// ARG:\n"
+                # Compile and run C++ code
+                compile_cmd = [
+                    '/usr/local/bin/g++-14', '-std=c++17', '-Wall', '-O2',
+                    file_path, '-o', output_file
                 ]
                 
-                # Thêm input, giữ nguyên định dạng xuống dòng
-                input_lines = args.split('\n')
-                for line in input_lines:
-                    output_lines.append(f"// {line}\n")
+                # Run compilation
+                compile_result = subprocess.run(compile_cmd, capture_output=True, text=True)
                 
-                output_lines.append("// OUTPUT:\n")
-                
-                # Kiểm tra output.txt ở thư mục của file nguồn
-                source_output_file = os.path.join(os.path.dirname(file_path), "output.txt")
-                if os.path.exists(source_output_file):
-                    # Đọc nội dung output.txt
-                    try:
-                        with open(source_output_file, "r", encoding="utf-8") as f:
-                            source_output = f.read().strip()
-                        
-                        # Xóa file output.txt sau khi đọc
-                        os.remove(source_output_file)
-                        
-                        # Thêm output từ file
-                        if source_output:
-                            output_lines_content = source_output.split('\n')
-                            for line in output_lines_content:
-                                output_lines.append(f"// {line}\n")
-                        else:
-                            output_lines.append("// [No Output]\n")
-                    except Exception as e:
-                        output_lines.append(f"// Error reading output.txt: {str(e)}\n")
-                        # Sử dụng stdout từ process
-                        if stdout and stdout.strip():
-                            output_lines_content = stdout.strip().split('\n')
-                            for line in output_lines_content:
-                                output_lines.append(f"// {line}\n")
-                        else:
-                            output_lines.append("// [No Output]\n")
-                else:
-                    # Sử dụng stdout từ process
-                    if stdout and stdout.strip():
-                        output_lines_content = stdout.strip().split('\n')
-                        for line in output_lines_content:
-                            output_lines.append(f"// {line}\n")
-                    else:
-                        output_lines.append("// [No Output]\n")
-                
-                # Thêm lỗi nếu có
-                if stderr and stderr.strip():
-                    output_lines.append("// ERROR:\n")
-                    stderr_lines = stderr.strip().split('\n')
-                    for line in stderr_lines:
-                        output_lines.append(f"// {line}\n")
-                
-                # Thêm return code
-                output_lines.append(f"// Return code: {return_code}\n")
-                output_lines.append("// ---------------------------\n")
-                
-                # Thay thế dòng lệnh run bằng kết quả
-                if run_line_idx < len(lines):
-                    lines[run_line_idx] = "".join(output_lines)
-                else:
-                    lines.append("".join(output_lines))
-                
-                # Ghi lại nội dung đã sửa
-                with open(file_path, "w", encoding="utf-8") as f:
-                    f.writelines(lines)
-                
-                print(f"🚀 Executed {file_path}")
-                self.logger.log_operation(file_path, "run", "success", "Execution successful")
-                
-                # Dọn dẹp file tạm
-                try:
-                    shutil.rmtree(temp_dir)
-                except Exception as e:
-                    print(f"Warning: Failed to clean up temporary directory: {e}")
+                if compile_result.returncode != 0:
+                    # Compilation error
+                    error_msg = f"⚠️ Compilation error:\n{compile_result.stderr}"
+                    self.status_handler.add_inline_status_message(file_path, run_line, error_msg, "error")
+                    self.logger.log_operation(file_path, "run_code", "error", "Compilation failed")
+                    return False
                     
-                return True
-            
+                # Run the compiled program
+                run_result = subprocess.run([output_file], capture_output=True, text=True, timeout=5)
+                result = run_result
             else:
-                error_msg = f"⚠️ Unsupported file type: {ext}. Only C++ (.cpp) files are supported for now."
-                self.status_handler.add_status_message(file_path, error_msg, "error")
-                print(error_msg)
-                self.logger.log_operation(file_path, "run", "error", "Unsupported file type")
+                # Add support for other languages as needed
+                message = f"⚠️ Unsupported file type: {ext}"
+                self.status_handler.add_inline_status_message(file_path, run_line, message, "error")
+                self.logger.log_operation(file_path, "run_code", "error", f"Unsupported file type: {ext}")
                 return False
                 
+            # Create output message
+            output_msg = f"✅ Code executed successfully:\n\nSTDOUT:\n{result.stdout}\n"
+            if result.stderr:
+                output_msg += f"\nSTDERR:\n{result.stderr}\n"
+                
+            # Add exit code information
+            output_msg += f"\nExit code: {result.returncode}"
+            
+            # Add success message with output
+            self.status_handler.add_inline_status_message(file_path, run_line, output_msg, 
+                                                         "success" if result.returncode == 0 else "error")
+            
+            # Remove run command
+            FileHandler.remove_line(file_path, "//run")
+            FileHandler.remove_line(file_path, "#run")
+            
+            # Log operation
+            self.logger.log_operation(file_path, "run_code", 
+                                     "success" if result.returncode == 0 else "error", 
+                                     f"Code executed with exit code {result.returncode}")
+            return True
+        except subprocess.TimeoutExpired:
+            error_msg = "⚠️ Execution timed out (5s limit)"
+            self.status_handler.add_inline_status_message(file_path, run_line, error_msg, "error")
+            self.logger.log_operation(file_path, "run_code", "error", "Execution timed out")
+            return False
         except Exception as e:
             error_msg = f"⚠️ Error running code: {str(e)}"
-            self.status_handler.add_status_message(file_path, error_msg, "error")
-            print(error_msg)
-            import traceback
+            self.status_handler.add_inline_status_message(file_path, run_line, error_msg, "error")
             traceback.print_exc()
-            self.logger.log_operation(file_path, "run", "error", error_msg)
+            self.logger.log_operation(file_path, "run_code", "error", error_msg)
             return False

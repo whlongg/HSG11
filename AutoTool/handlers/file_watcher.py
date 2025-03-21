@@ -76,7 +76,7 @@ class FileWatcher:
         print("   - //commit branch_name.: Commit to specified branch")
         print("   - //status: Check synchronization status")
         print("   - //cp: Create competitive programming template")
-        print("   - //run 'arg' now: Run C++ code with arg")
+        print("   - //run: Run C++ compiler")
         
     def stop(self):
         """Stop watching for file changes"""
