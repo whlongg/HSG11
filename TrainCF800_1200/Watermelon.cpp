@@ -1,3 +1,5 @@
+//TrainCF800_1200/Watermelon.cpp
+//https://codeforces.com/problemset/problem/4/A
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -9,16 +11,17 @@ using namespace std;
 void init(){
     file("input.txt", "output.txt");
 }
-
 void solve(){
-
+        int n; cin >> n;
+        if(n==2){
+            cout << "NO";
+            return;
+        }
+        cout << ((n%2==0)?"YES":"NO");
 }
-
 int32_t main(void){
     FASTIO;
-    #ifndef ONLINE_JUDGE
-        init();
-    #endif
+    //init();
     int q = 1;
     //cin >> q;
     while(q--)
