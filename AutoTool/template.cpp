@@ -7,7 +7,7 @@ using namespace std;
 #define FASTIO ios_base::sync_with_stdio(false);cin.tie(nullptr);
 
 void init(){
-    file("input.txt", "output.txt");
+    file("testcs.inp", "testcs.out");
 }
 
 void solve(){

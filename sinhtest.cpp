@@ -22,20 +22,21 @@ void sinhtest(){    //tuong tac voi file ngoai (inp)
 
 int32_t main(){
     srand(time(0));
-    for(int i = 1; i <= 1; i++) sinhtest();
-    //chay 2 file & so sanh, kiem tra;
-    if (system("./main")) {
-        cerr << "Lỗi: Không thể chạy main\n";
-        exit(1);
-    }
-    if (system("./test")) {
-        cerr << "Lỗi: Không thể chạy test\n";
-        exit(1);
-    }    
-    //diff cho macos/linux, fc cho windows
-    if(system("diff testcs.out testcs.ans")==0){
-        cout << "CORRECT\n";
-    }
-    else
-        cout << "WRONG\n";
+    for(int i = 1; i <= 100; i++){
+        sinhtest();
+        if(i == 10){
+            ofstream cout("testcs.inp");
+            cout << 4 << ' ' << 2 << ' ' << 0 << ' ' << 0 << ' ' << 0 << ' ' << 0;
+        }
+        system("./test");
+        system("./main");    
+        //diff cho macos/linux, fc cho windows
+        if(system("diff testcs.out testcs.ans")==0){
+            cout << "CORRECT\n";
+        }
+        else{
+            cout << "WRONG\n";
+            return 0;
+        }
+    } 
 }

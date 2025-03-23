@@ -267,9 +267,9 @@ class SyncHandler:
             # Get file extension to determine language
             _, ext = os.path.splitext(file_path)
             
-            # Define output directory
-            output_dir = os.path.join(os.path.dirname(file_path), "output")
-            os.makedirs(output_dir, exist_ok=True)
+            # Define output directory - use the same directory as the source file
+            output_dir = os.path.dirname(file_path)
+            # No need to create directory since we're using the existing one
             
             # Base filename without extension
             base_name = os.path.basename(file_path).split('.')[0]

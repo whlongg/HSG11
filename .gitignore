@@ -10,3 +10,8 @@ AutoTool/autosync_log.json
 AutoTool/handlers/__pycache__
 .vscode
 ouput
+main
+test
+testcs.inp
+testcs.out
+testcs.ans
