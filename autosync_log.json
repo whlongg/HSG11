@@ -110,5 +110,215 @@
     "operation": "run_code",
     "status": "success",
     "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:05:50",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n1c1\n< 4\n\\ No newline at end of file\n---\n> 0\n\\ No newline at end of file\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nWRONG\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:05:50",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:05:53",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n1c1\n< 4\n\\ No newline at end of file\n---\n> 0\n\\ No newline at end of file\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nWRONG\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:05:53",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:05:55",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n1c1\n< 4\n\\ No newline at end of file\n---\n> 0\n\\ No newline at end of file\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nWRONG\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:05:55",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:05:58",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n1c1\n< 4\n\\ No newline at end of file\n---\n> 0\n\\ No newline at end of file\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nWRONG\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:05:58",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:06:00",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n1c1\n< 4\n\\ No newline at end of file\n---\n> 0\n\\ No newline at end of file\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nCORRECT\nWRONG\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:06:00",
+    "file": "/Users/astrelix/Documents/HSG11/sinhtest.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:12:29",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-23 21:12:29",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-23 21:16:14",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:16:14",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:16:41",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:16:41",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:28:44",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:28:44",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:36:34",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:36:34",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:43:50",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:43:50",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:46:26",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:46:26",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-23 21:51:52",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f Compilation error:\n/Users/astrelix/Documents/HSG11/test.cpp: In function 'void solve()':\n/Users/astrelix/Documents/HSG11/test.cpp:23:26: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long unsigned int'} [-Wsign-compare]\n   23 |         for(int i = 0; i < word.size(); i++){ //3\n      |                        ~~^~~~~~~~~~~~~\n/Users/astrelix/Documents/HSG11/test.cpp:36:18: error: redeclaration of 'std::stringstream kc'\n   36 |     stringstream kc(k);\n      |                  ^~\n/Users/astrelix/Documents/HSG11/test.cpp:31:18: note: 'std::stringstream kc' previously declared here\n   31 |     stringstream kc(k);\n      |                  ^~\n"
+  },
+  {
+    "timestamp": "2025-03-23 21:51:52",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "error",
+    "message": "Compilation failed"
+  },
+  {
+    "timestamp": "2025-03-23 22:15:43",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-23 22:15:43",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-23 22:22:30",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/TrainCF800_1200/1_a.cpp"
+  },
+  {
+    "timestamp": "2025-03-23 22:22:30",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/TrainCF800_1200/1_a.cpp"
   }
 ]
