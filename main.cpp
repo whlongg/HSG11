@@ -41,7 +41,7 @@ void bfs(int start){
     queue <int> q;
     q.push(start);
     while(!q.empty()){
-        int u = q.top();
+        int u = q.front();
         q.pop();
         for(int v : adj[u]){
             if(!visited[v]){

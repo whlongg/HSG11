@@ -362,5 +362,201 @@
     "operation": "cp_template",
     "status": "success",
     "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-28 22:36:25",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-28 22:36:25",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-30 00:45:42",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/ContestCodeforces/2092/D.cpp"
+  },
+  {
+    "timestamp": "2025-03-30 00:45:42",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/ContestCodeforces/2092/D.cpp"
+  },
+  {
+    "timestamp": "2025-03-30 00:45:58",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-30 00:45:58",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-30 00:47:06",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/DTQGSPRING/DoThi/A.cpp"
+  },
+  {
+    "timestamp": "2025-03-30 00:47:06",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/DTQGSPRING/DoThi/A.cpp"
+  },
+  {
+    "timestamp": "2025-03-30 00:51:59",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-30 00:51:59",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-30 00:52:13",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-03-30 00:52:13",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-03-30 00:53:49",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/DTQGSPRING/DoThi/A.cpp"
+  },
+  {
+    "timestamp": "2025-03-30 00:53:49",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/DTQGSPRING/DoThi/A.cpp"
+  },
+  {
+    "timestamp": "2025-03-30 00:54:34",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-30 00:54:34",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-03-30 01:14:34",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/DTQGSPRING/DoThi/B.cpp"
+  },
+  {
+    "timestamp": "2025-03-30 01:14:34",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/DTQGSPRING/DoThi/B.cpp"
+  },
+  {
+    "timestamp": "2025-03-30 01:14:39",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-03-30 01:14:39",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-04-02 18:03:43",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/astrelix/Documents/HSG11/DTQGSPRING/ContestDP/A6.cpp"
+  },
+  {
+    "timestamp": "2025-04-02 18:03:43",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/astrelix/Documents/HSG11/DTQGSPRING/ContestDP/A6.cpp"
+  },
+  {
+    "timestamp": "2025-04-02 18:04:58",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-04-02 18:04:58",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-04-02 18:06:38",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-04-02 18:06:38",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-04-02 18:16:32",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-04-02 18:16:32",
+    "file": "/Users/astrelix/Documents/HSG11/test.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
   }
 ]
