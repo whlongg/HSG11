@@ -10,8 +10,9 @@ void init(){
     file("testcs.inp", "testcs.out");
 }
 
-void solve(){
-
+void solve(){   
+    int n; cin >> n;
+    
 }
 
 int32_t main(void){
