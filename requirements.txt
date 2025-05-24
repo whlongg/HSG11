@@ -1,1 +1,3 @@
-pip install gitpython watchdog
+gitpython 
+watchdog
+python-dotenv

@@ -281,7 +281,7 @@ class SyncHandler:
             if ext.lower() == '.cpp':
                 # Compile and run C++ code
                 compile_cmd = [
-                    '/usr/local/bin/g++-14', '-std=c++17', '-Wall', '-O2',
+                    'g++-14', '-std=c++17', '-Wall', '-O2',
                     file_path, '-o', output_file
                 ]
                 

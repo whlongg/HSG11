@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": "2025-03-23 21:02:56",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "success",
-    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
-  },
-  {
-    "timestamp": "2025-03-23 21:02:56",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "run_code",
-    "status": "success",
-    "message": "Code executed with exit code 0"
-  },
-  {
-    "timestamp": "2025-03-23 21:02:58",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "success",
-    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
-  },
-  {
-    "timestamp": "2025-03-23 21:02:58",
-    "file": "/Users/astrelix/Documents/HSG11/main.cpp",
-    "operation": "run_code",
-    "status": "success",
-    "message": "Code executed with exit code 0"
-  },
-  {
     "timestamp": "2025-03-23 21:03:00",
     "file": "/Users/astrelix/Documents/HSG11/main.cpp",
     "operation": "inline_status_update",
@@ -558,5 +530,173 @@
     "operation": "run_code",
     "status": "success",
     "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:20:10",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-24 09:20:10",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-24 09:20:29",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f Error running code: [Errno 2] No such file or directory: '/usr/local/bin/g++-14'"
+  },
+  {
+    "timestamp": "2025-05-24 09:20:29",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "error",
+    "message": "\u26a0\ufe0f Error running code: [Errno 2] No such file or directory: '/usr/local/bin/g++-14'"
+  },
+  {
+    "timestamp": "2025-05-24 09:22:29",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f Error running code: [Errno 2] No such file or directory: '/usr/local/bin/g++-14'"
+  },
+  {
+    "timestamp": "2025-05-24 09:22:29",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "error",
+    "message": "\u26a0\ufe0f Error running code: [Errno 2] No such file or directory: '/usr/local/bin/g++-14'"
+  },
+  {
+    "timestamp": "2025-05-24 09:23:03",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-05-24 09:23:03",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-05-24 09:23:13",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/AutoTool/handlers/sync_handler.py",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f No target path found in file"
+  },
+  {
+    "timestamp": "2025-05-24 09:23:13",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/AutoTool/handlers/sync_handler.py",
+    "operation": "sync",
+    "status": "error",
+    "message": "No target path found"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:11",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f Error running code: [Errno 2] No such file or directory: 'g++14'"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:11",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "error",
+    "message": "\u26a0\ufe0f Error running code: [Errno 2] No such file or directory: 'g++14'"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:34",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:34",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:36",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:36",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:38",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:38",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:40",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:40",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:42",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:42",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:44",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "error",
+    "message": "\u26a0\ufe0f Compilation error:\n"
+  },
+  {
+    "timestamp": "2025-05-24 09:25:44",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "error",
+    "message": "Compilation failed"
   }
 ]
