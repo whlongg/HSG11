@@ -12,14 +12,28 @@ void init(){
 }
 
 void solve(){
+    int n, m; cin >> n >> m;
+    set<vector<int>> uset;
+    for(int i = 1; i <= n; ++i){
+        vector<int> vt;
+        
+        for(int j = 0; j < m; ++j){
+            int val; cin >> val;
+            vt.push_back(val);
+        }
 
+        sort(vt.begin(), vt.end());
+        vt.erase(unique(vt.begin(), vt.end()), vt.end());
+        uset.insert(vt);
+    }
+    cout << uset.size();
 }
 
 int32_t main(void){
     FASTIO;
-    #ifndef ONLINE_JUDGE
-        init();
-    #endif
+    // #ifndef ONLINE_JUDGE
+    //     init();
+    // #endif
     int q = 1;
     //cin >> q;
     while(q--)

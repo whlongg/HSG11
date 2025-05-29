@@ -1,4 +1,4 @@
-// DTQGSummer/STL/F_CountDiffAss.cpp
+// DTQGSummer/STL/D_DiffX.cpp
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -12,14 +12,18 @@ void init(){
 }
 
 void solve(){
-
+    int n, x; cin >> n;
+    set <int> st;
+    for(int i = 1; i <= n; ++i)
+        cin >> x, st.insert(x);
+    cout << st.size();
 }
 
 int32_t main(void){
     FASTIO;
-    #ifndef ONLINE_JUDGE
-        init();
-    #endif
+    // #ifndef ONLINE_JUDGE
+    //     init();
+    // #endif
     int q = 1;
     //cin >> q;
     while(q--)
