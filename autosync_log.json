@@ -180,5 +180,509 @@
     "operation": "cp_template",
     "status": "success",
     "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 17:42:33",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/G_idxS.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 17:42:33",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/G_idxS.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 17:42:41",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 17:42:41",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:22",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:22",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:24",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:24",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:26",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:26",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:28",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:28",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:30",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:30",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:32",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Code executed successfully:\n\nSTDOUT:\n\n\nExit code: 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:43:32",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "run_code",
+    "status": "success",
+    "message": "Code executed with exit code 0"
+  },
+  {
+    "timestamp": "2025-05-29 17:44:43",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 17:44:43",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 18:13:44",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/H_v2x.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 18:13:44",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/H_v2x.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 18:16:50",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/H_v2x.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 18:16:50",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/H_v2x.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 18:20:02",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Files are already identical, no sync needed"
+  },
+  {
+    "timestamp": "2025-05-29 18:20:02",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Files already identical"
+  },
+  {
+    "timestamp": "2025-05-29 18:20:52",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 18:20:52",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 18:37:27",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/K_3n-n=2n.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 18:37:27",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/K_3n-n=2n.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 18:37:39",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 18:37:39",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 18:57:01",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 18:57:01",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 19:04:39",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/J_Sum3v.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 19:04:39",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/STL/J_Sum3v.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:03:42",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:03:42",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:14:13",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/amub.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:14:13",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/amub.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:14:42",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:14:42",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:19:00",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/tamphan.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:19:00",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/tamphan.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:19:07",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:19:07",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:33:02",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/C_LietKeHoanVi.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:33:02",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/C_LietKeHoanVi.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:33:08",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:33:08",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:50:12",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/D_TongTapCon.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:50:12",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/D_TongTapCon.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:51:00",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:51:00",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 22:59:56",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/D_TongTapCon.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 22:59:56",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/D_TongTapCon.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 23:00:02",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 23:00:02",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-29 23:16:39",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/E_DayNgoac.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 23:16:39",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/E_DayNgoac.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 23:17:02",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/F_nhanSl.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 23:17:02",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/F_nhanSl.cpp"
+  },
+  {
+    "timestamp": "2025-05-29 23:26:35",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-29 23:26:35",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-30 00:09:51",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSPRING/DoThi/C.cpp"
+  },
+  {
+    "timestamp": "2025-05-30 00:09:51",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSPRING/DoThi/C.cpp"
+  },
+  {
+    "timestamp": "2025-05-30 00:10:01",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-30 00:10:01",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-30 01:22:30",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSPRING/DoThi/D_DemPhong.cpp"
+  },
+  {
+    "timestamp": "2025-05-30 01:22:30",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSPRING/DoThi/D_DemPhong.cpp"
+  },
+  {
+    "timestamp": "2025-05-30 11:05:36",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-05-30 11:05:36",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-05-30 11:15:09",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSPRING/DoThi/E_SoTan.cpp"
+  },
+  {
+    "timestamp": "2025-05-30 11:15:09",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSPRING/DoThi/E_SoTan.cpp"
   }
 ]

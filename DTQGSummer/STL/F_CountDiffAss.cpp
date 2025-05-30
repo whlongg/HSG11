@@ -21,9 +21,10 @@ void solve(){
             int val; cin >> val;
             vt.push_back(val);
         }
-
+        //xoa cac phan tu trung lap trong vector
         sort(vt.begin(), vt.end());
         vt.erase(unique(vt.begin(), vt.end()), vt.end());
+        //end
         uset.insert(vt);
     }
     cout << uset.size();
