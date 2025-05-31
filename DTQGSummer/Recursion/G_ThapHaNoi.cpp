@@ -1,6 +1,7 @@
+// DTQGSummer/Recursion/G_ThapHaNoi.cpp
 /*
     author: Nguyen Hoang Long
-    oj.vnoi.info/user/nhl08contact
+    oj.vnoi.info/nhl08contact
 */
 #include <bits/stdc++.h>
 using namespace std;
@@ -18,8 +19,24 @@ void init(){
     file("testcs.inp", "testcs.out");
 }
 
-void solve(){
+vector<pair<int,int>> moves;
 
+void move(int n, int from, int to, int aux){
+    if(n==1){
+        moves.push_back({from, to});
+        return;
+    }
+    move(n-1, from, aux, to);
+    moves.push_back({from, to});
+    move(n-1, aux, to, from);
+}
+
+void solve(){
+    int n; cin >> n;
+    move(n, 1, 3, 2);
+    cout << moves.size() << '\n';
+    for(auto [x, y] : moves)
+        cout << x << ' ' << y << '\n';
 }
 
 int32_t main(void){
