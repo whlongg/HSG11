@@ -1,6 +1,5 @@
-//DTQGSPRING/DoThi/E_SoTan.cpp
-//AC with C++23
-
+// DTQGSPRING/DoThi/E_SoTan.cpp
+//https://yhdtqgspring25.contest.codeforces.com/group/Au4M0A1OWN/contest/590578/problem/F
 /*
     author: Nguyen Hoang Long
     oj.vnoi.info/nhl08contact
@@ -10,69 +9,91 @@ using namespace std;
 #define ll long long
 #define fi first
 #define se second
-#define file(inp, out) freopen((inp), "r", stdin);freopen((out), "w", stdout);
-#define FASTIO ios_base::sync_with_stdio(false);cin.tie(nullptr);
-#define FOR(i, a, b) for(int i = (a); i <= (b); ++i)
-#define REP(i,b) for(int i = 1; i <= n; ++i)
-#define MAX 100005
-#define MOD 1000000007
+#define file(inp, out)          \
+    freopen((inp), "r", stdin); \
+    freopen((out), "w", stdout);
+#define FASTIO                        \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(nullptr);
+#define FOR(i, a, b) for (int i = (a); i <= (b); ++i)
+#define REP(i, b) for (int i = 1; i <= n; ++i)
+#define MAX 1003
+#define MOD 100000007
 
-void init(){
-    file("testcs.inp", "testcs.out");
+void init()
+{
+    file("ANT.INP", "ANT.OUT");
 }
 
+int grid[MAX][MAX], dist[MAX][MAX], ways[MAX][MAX];
+int dx[] = {-1, 1, 0, 0};
+int dy[] = {0, 0, -1, 1};
+int n, m;
+bool visited[1003][1003];
 
-vector<int> adj[MAX]; 
-int n, m, k; 
-int dist[MAX];
+bool check(int x, int y)
+{
+    return x >= 1 && x <= n && y >= 1 && y <= m;
+}
 
-void bfs(const vector<int>&exits){
-    queue<int> q;
-    vector<bool> visited(n+1, false);
-    for(int u : exits){
-        q.push(u);
-        visited[u]=true;
-        dist[u]=0;
-    }
+void bfs()
+{
+    queue<pair<int, int>> q;
+    q.push({1, 1});
+    dist[1][1] = 0;
+    ways[1][1] = 1;
+    visited[1][1] = true;
 
-    while(!q.empty()){
-        int u = q.front(); q.pop();
-
-        for(int v : adj[u]){
-            if(!visited[v]){
-                visited[v]=true;
-                dist[v] = dist[u] + 1;
-                q.push(v);
+    while (!q.empty())
+    {
+        auto [x, y] = q.front();
+        q.pop();
+        for (int d = 0; d < 4; ++d)
+        {
+            int nx = x + dx[d], ny = y + dy[d];
+            if (check(nx, ny) && grid[nx][ny]==1)
+            {
+                if (!visited[nx][ny])
+                {
+                    visited[nx][ny] = true;
+                    dist[nx][ny] = dist[x][y] + 1;
+                    ways[nx][ny] = ways[x][y];
+                    q.push({nx, ny});
+                }
+                else if (dist[nx][ny] == dist[x][y] + 1)
+                    ways[nx][ny] = (ways[nx][ny] + ways[x][y]) % MOD;
             }
         }
     }
 }
 
-void solve(){
-    cin >> n >> k;
-    vector<int> exits;
-    int _;
-    FOR(i, 1, k)    cin >> _, exits.push_back(_);
-
-    cin >> m;
-    FOR(i, 1, m){
-        int u, v; cin >> u >> v;
-        adj[u].push_back(v);
-        adj[v].push_back(u);
+void solve()
+{
+    cin >> n >> m;
+    FOR(i, 1, n)
+    {
+        string s;
+        cin >> s;
+        FOR(j, 1, m)
+        grid[i][j] = s[j - 1] - '0', dist[i][j] = -1;
     }
-    
-    bfs(exits);
 
-    FOR(i, 1, n)    cout << dist[i] << ' ';
+    if(grid[1][1]==0 || grid[n][m]==0){
+        cout << 0 << '\n' << -1;
+        return;
+    }
+
+    bfs();
+    cout << ways[n][m] % MOD << '\n'
+         << dist[n][m];
 }
 
-int32_t main(void){
+int32_t main(void)
+{
     FASTIO;
-    #ifndef ONLINE_JUDGE
-        init();
-    #endif
+    init();
     int q = 1;
-    //cin >> q;
-    while(q--)
+    // cin >> q;
+    while (q--)
         solve();
 }
