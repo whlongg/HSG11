@@ -1,11 +1,13 @@
-// DTQGSummer/SoHoc/J_PhiHamEuler.cpp
+// DTQGSummer/SoHoc/H_ExtendedGcd.cpp
+
+
 /*
     author: Nguyen Hoang Long
     oj.vnoi.info/user/nhl08contact
 */
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
+#define int long long
 #define fi first
 #define se second
 #define file(inp, out) freopen((inp), "r", stdin);freopen((out), "w", stdout);
@@ -19,8 +21,24 @@ void init(){
     file("testcs.inp", "testcs.out");
 }
 
-void solve(){
+int egcd(int a, int b, int &x, int &y){
+    if(b==0){
+        x=1;
+        y=0;
+        return a;
+    }
+    int x1, y1;
+    int d = egcd(b, a%b, x1,y1);
+    x = y1;
+    y = x1 - (a/b) * y1;
+    return d;
+}
 
+void solve(){
+    int n,m; cin >> n >> m;
+    int x, y;
+    egcd(n,m,x,y);
+    cout << x << ' ' << y;
 }
 
 int32_t main(void){
