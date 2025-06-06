@@ -1,4 +1,4 @@
-// DTQGSummer/PrefixSum/D_TuoiCay2.cpp
+// DTQGSummer/PrefixSum/C_TuoiCay.cpp
 /*
     author: Nguyen Hoang Long
     oj.vnoi.info/user/nhl08contact
@@ -19,8 +19,12 @@ void init(){
     file("testcs.inp", "testcs.out");
 }
 
-void solve(int x, int y, int u, int v, int c){
-    
+int arr[MAX], idx[MAX], prefix[MAX];
+
+void solve(){
+    int l, r, x; cin >> l >> r >> x;
+    idx[l] = idx[l] + x;
+    idx[r+1] = idx[r+1] - x;
 }
 
 int32_t main(void){
@@ -28,13 +32,16 @@ int32_t main(void){
     #ifndef ONLINE_JUDGE
         init();
     #endif
-    int n, m; cin >> n >> m;
+
+    int n; cin >> n;
+    FOR(i,1,n)  cin >> arr[i];
     int q = 1;
     cin >> q;
-    while(q--){
-        int x, y,u,v,c;
-        cin >> x >> y >> u >> v >> c;
-        solve(x,y,u,v,c);
-    }
-        
+    while(q--)
+        solve();
+    arr[0] = 0;
+    FOR(i,1,n)
+        prefix[i] = prefix[i-1] + idx[i];
+    FOR(i,1,n)
+        cout << arr[i]+prefix[i] << ' ';
 }
