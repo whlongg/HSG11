@@ -1,4 +1,6 @@
-// DTQGSPRING/ContestPrefixSum/J_TongDoanCuaTongDoan.cpp
+// DTQGSummer/PrefixSum/J_TongDoanCuaTongDoan.cpp
+
+
 /*
     author: Nguyen Hoang Long
     oj.vnoi.info/user/nhl08contact
