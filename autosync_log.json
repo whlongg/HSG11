@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": "2025-05-31 13:40:36",
-    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "success",
-    "message": "\u2705 Template applied to current file"
-  },
-  {
-    "timestamp": "2025-05-31 13:40:36",
-    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
-    "operation": "cp_template",
-    "status": "success",
-    "message": "Applied template to current file"
-  },
-  {
-    "timestamp": "2025-05-31 14:14:03",
-    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
-    "operation": "inline_status_update",
-    "status": "success",
-    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/I_TongCapSoNhan.cpp"
-  },
-  {
-    "timestamp": "2025-05-31 14:14:03",
-    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
-    "operation": "sync",
-    "status": "success",
-    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/Recursion/I_TongCapSoNhan.cpp"
-  },
-  {
     "timestamp": "2025-05-31 14:15:20",
     "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
     "operation": "inline_status_update",
@@ -698,5 +670,33 @@
     "operation": "sync",
     "status": "success",
     "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/DP2/A1_NuocMua.cpp"
+  },
+  {
+    "timestamp": "2025-06-06 22:42:13",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Template applied to current file"
+  },
+  {
+    "timestamp": "2025-06-06 22:42:13",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "cp_template",
+    "status": "success",
+    "message": "Applied template to current file"
+  },
+  {
+    "timestamp": "2025-06-09 15:18:55",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "inline_status_update",
+    "status": "success",
+    "message": "\u2705 Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/DP2/A3_BanhQuy.cpp"
+  },
+  {
+    "timestamp": "2025-06-09 15:18:55",
+    "file": "/Users/whlongg/Documents/hdd/HSG11/main.cpp",
+    "operation": "sync",
+    "status": "success",
+    "message": "Synchronized to /Users/whlongg/Documents/hdd/HSG11/DTQGSummer/DP2/A3_BanhQuy.cpp"
   }
 ]

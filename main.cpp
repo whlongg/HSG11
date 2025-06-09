@@ -1,4 +1,4 @@
-// DTQGSummer/DP2/A1_NuocMua.cpp
+// DTQGSummer/DP2/A3_BanhQuy.cpp
 
 
 /*
@@ -7,7 +7,7 @@
 */
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
+#define int long long
 #define fi first
 #define se second
 #define file(inp, out)          \
@@ -23,33 +23,29 @@ const int MAX = 1e6 + 5;
 
 void init()
 {
-    file("rainwater.inp", "rainwater.out");
+    file("cookies.inp", "cookies.out");
 }
-
-int max_left[MAX], max_right[MAX], a[MAX];
 
 void solve()
 {
-    int n;
-    cin >> n;
-    for (int &x : a)
-        cin >> x;
-    max_left[0] = a[0];
-    for (int i = 1; i < n; ++i)
-        max_left[i] = max(max_left[i - 1], a[i]);
-    max_right[n - 1] = a[n - 1];
-    for (int i = n - 2; i >= 0; --i)
-        max_right[i] = max(max_right[i + 1], a[i]);
-
-    ll res = 0;
-    FOR(i, 0, n - 1)
+    int n, k;
+    cin >> n >> k;
+    set<int> dp[2];
+    dp[0].insert(n * 2);
+    for (int i = 1; i <= k; ++i)
     {
-        int h = min(max_left[i], max_right[i]);
-        if (h > a[i])
-            res += h - a[i];
+        dp[i % 2].clear();
+        for (int x : dp[(i - 1) % 2])
+        {
+            if (x % 2 == 0 && x >= 2)
+                dp[i % 2].insert(x / 2);
+            if(x>0) 
+                dp[i % 2].insert(x - 1);
+        }
     }
-
-    cout << res;
+    cout << dp[k % 2].size() << '\n';
+    for (int x : dp[k % 2])
+        cout << fixed << setprecision(1) << (x / 2.0) << ' ';
 }
 
 int32_t main(void)
