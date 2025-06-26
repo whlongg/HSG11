@@ -16,3 +16,7 @@ sinhtest
 testcs.inp
 testcs.out
 testcs.ans
+
+
+#Ignore vscode AI rules
+.github/copilot-instructions.md

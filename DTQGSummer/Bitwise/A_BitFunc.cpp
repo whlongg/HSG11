@@ -1,12 +1,13 @@
-// DTQGSummer/Sorting_TwoPointer_BinarySearch/A4_TimX.cpp
+// DTQGSummer/Bitwise/A_BitFunc.cpp
+
+
 /*
     author: Nguyen Hoang Long
     oj.vnoi.info/user/nhl08contact
 */
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long
-#define ull unsigned long long
+#define int long long
 #define fi first
 #define se second
 #define file(inp, out) freopen((inp), "r", stdin);freopen((out), "w", stdout);
@@ -21,7 +22,22 @@ void init(){
 }
 
 void solve(){
-
+    int n; cin >> n;
+    int a = __builtin_popcountll(n);
+    int l = -1;
+    for(int i = 63; i >= 0; --i)
+        if((n >> i) & 1){
+            l = i;
+            break;
+        }
+    int r = -1;
+    for(int i = 0; i <= 63; ++i)
+        if((n >> i) & 1){
+            r = i;
+            break;
+        }
+    
+    cout << a << ' ' << l << ' ' << r;
 }
 
 int32_t main(void){

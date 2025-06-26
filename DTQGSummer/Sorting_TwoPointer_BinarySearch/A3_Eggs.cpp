@@ -1,4 +1,4 @@
-// DTQGSummer/Sorting_TwoPointer_BinarySearch/A4_TimX.cpp
+// DTQGSummer/Sorting_TwoPointer_BinarySearch/A3_Eggs.cpp
 /*
     author: Nguyen Hoang Long
     oj.vnoi.info/user/nhl08contact
@@ -20,8 +20,29 @@ void init(){
     file("testcs.inp", "testcs.out");
 }
 
-void solve(){
+vector<pair<int,int>> a;
+bool check(ll time, ll x){
+    ll res = 0;
+    for(auto [p, t] : a){
+        if(time >= p){
+            res += (time - p) / t + 1;
+        }
+        if (res >= x)   return true;
+    }
+    return res >= x;
+}
 
+void solve(){
+    ll n, x; cin >> n >> x;
+    a.resize(n);
+    for(auto &[p, t] : a) cin >> p >> t;
+    ll l = 0, r = 1e18;
+    while( l < r){
+        ll mid = (l + r) / 2;
+        if(check(mid, x))  r = mid;
+        else l = mid + 1;
+    }
+    cout << l << '\n';
 }
 
 int32_t main(void){

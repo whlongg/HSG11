@@ -5,6 +5,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
+#define ull unsigned long long
 #define fi first
 #define se second
 #define file(inp, out) freopen((inp), "r", stdin);freopen((out), "w", stdout);
